@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (c) 2025 Jhulen Mallo
+ * Todos los derechos reservados.
+ * 
+ * Este código es propiedad de Jhulen Mallo.
+ * El uso no autorizado está prohibido.
+-->
+ <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Arquitecto de Datos & Analytics</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">{'< Data />'}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Neural Network Background -->
+        <div class="neural-background">
+            <svg width="700" height="450" id="neural-svg"></svg>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <img src="assets/img/foto.jpeg" alt="Foto profesional" class="profile-image">
+                        <h1 class="hero-title">Jhulen Mallo</h1>
+                        <h2 class="hero-role">Analista de Datos & Full Stack Developer</h2>
+                        <!-- <p class="hero-description">
+                            Especializado en Machine Learning, Big Data y arquitecturas escalables.
+                        </p> -->
+                        <div class="hero-stats">
+                            <span class="stat-item">5+ Certificaciones</span>
+                            <span class="stat-item">•</span>
+                            <span class="stat-item">Banca & Fintech</span>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="#certifications" class="btn-primary">Descargar mi CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="hexagon-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <h2 class="display-5 fw-bold mb-3">Sobre Mí</h2>
+            <p class="lead"></p>
+            <p class="lead"></p>
+            <p class="lead"></p>
+        </div>
+        
+        <div class="row gy-4 justify-content-center">
+            <div class="col-lg-8">
+                <div class="about-content">
+                    <h3 class="mb-4">Data Analyst & Full Stack Developer</h3>
+                    <p class="about-description mb-4">
+                        Licenciado en Informática con mención en Ciencias de la Computación. Especialista en análisis, ingeniería y procesamiento de datos en el sector bancario. Experiencia en modernización de procesos ETL desde SSIS hacia flujos orquestados con Apache Airflow y Python, integrando servicios mediante FastAPI. Amplio dominio en herramientas como SQL Server, Spark, Power BI y Power Automate para la automatización y visualización de información.
+                    </p>
+                    <p class="about-description mb-4">
+                        Experiencia previa en desarrollo backend con .NET y frontend con HTML, CSS, JavaScript, Bootstrap y jQuery. Gestión de bases de datos con PostgreSQL y SQL Server, despliegue de aplicaciones en Azure App Services y automatización de reportes empresariales.
+                    </p>
+                    <p class="about-description mb-4">
+                        Actualmente cursando una carrera paralela en Estadística con mención en Ciencia de Datos.
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="about-details">
+                                <li><i class="fas fa-chevron-right"></i> <strong>Edad:</strong> <span>27 años</span></li>
+                                <!-- <li><i class="fas fa-chevron-right"></i> <strong>Teléfono:</strong> <span>+591 79577091</span></li> -->
+                                <li><i class="fas fa-chevron-right"></i> <strong>Ciudad:</strong> <span>La Paz, Bolivia</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="about-details">
+                                <li><i class="fas fa-chevron-right"></i> <strong>Título:</strong> <span>Licenciatura</span></li>
+                                <li><i class="fas fa-chevron-right"></i> <strong>Email:</strong> <span>jmalloq@gmail.com</span></li>
+                                <!-- <li><i class="fas fa-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Habilidades Técnicas</h2>
+            <p class="lead">Stack tecnológico y herramientas especializadas</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <!-- Data Science & Analytics -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h4>Data Science</h4>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>R</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Spark</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Power BI</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database Management -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Bases de Datos</h4>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>SQL Server</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <!-- <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Frontend</h4>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>HTML / CSS / JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span></span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Materialize</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Angular</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Cloud -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>Cloud</h4>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Microsoft Azure</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 55%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Google Cloud Platform</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Docker & Containerization</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Cloud Deployments & Databases</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Backend & Frontend</h4>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>.NET</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PHP</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>FastAPI</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Bootstrap & jQuery</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Experiencia Profesional</h2>
+            <p class="lead">3+ años de experiencia combinando desarrollo y análisis de datos</p>
+        </div>
+        
+        <div class="timeline">
+            <!-- Current Position - Data Architect -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 - Presente</div>
+                    <h3>Data Analyst</h3>
+                    <h4>Banco Bisa</h4>
+                    <p>Especialista en análisis avanzado de datos y gestión de pipelines de datos crudos para reporting. Utilizo Python, SQL Server, Airflow, Fast API y Weka para procesar y optimizar grandes volúmenes de información en el sector bancario. Desarrollo reportes analíticos y automatizaciones con Power BI y Power Automate que apoyan la toma de decisiones estratégicas.</p>
+                    <div class="achievement-section">
+                        <h5>Responsabilidades clave:</h5>
+                        <ul class="experience-highlights">
+                            <li>Diseño y mantenimiento de pipelines de datos eficientes</li>
+                            <li>Optimización de consultas y modelos en SQL Server</li>
+                            <li>Desarrollo de dashboards dinámicos en Power BI</li>
+                            <li>Automatización de procesos con Power Automate</li>
+                        </ul>
+                        <h5>Impacto principal:</h5>
+                        <ul class="experience-highlights">
+                            <li>Mejora en la eficiencia del flujo de datos y reporting</li>
+                            <li>Soporte analítico directo para decisiones estratégicas</li>
+                            <li>Reducción de tiempos de procesamiento de información</li>
+                            <li>Implementación de buenas prácticas en ingeniería de datos</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Transact-SQL</span>
+                            <span class="tech-tag">Spark</span>
+                            <span class="tech-tag">Fast API</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">Weka</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Power Automate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SANTILLANA Consolidated -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 - Presente (Períodos eventuales)</div>
+                    <h3>Full Stack Developer</h3>
+                    <h4>SANTILLANA Bolivia - Consultor Eventual</h4>
+                    <p>Desarrollo de soluciones backend con .NET e interfaces frontend usando HTML, CSS, JavaScript, Bootstrap y jQuery. Trabajo eventual con períodos de 3 meses, siendo llamado regularmente para nuevos proyectos y mantenimientos.</p>
+                    <div class="achievement-section">
+                        <h5>Períodos de trabajo:</h5>
+                        <ul class="experience-highlights">
+                            <li>Noviembre 2023 - Enero 2024: Desarrollo inicial</li>
+                            <li>Noviembre 2024 - Presente: Nuevos desarrollos</li>
+                            <li>Proyectos adicionales según necesidades de la empresa</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SendGrid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teaching Experience -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2020 - 2023</div>
+                    <h3>Auxiliar de Enseñanza Universitario</h3>
+                    <h4>Universidad Mayor de San Andrés (UMSA) - Docencia Universitaria</h4>
+                    <p>Auxiliar de enseñanza en la Carrera de Informática, impartiendo 4 diferentes cursos a lo largo de 4 años académicos. Fortalecí mi capacidad de transmitir conocimientos complejos y liderar equipos técnicos.</p>
+                    <div class="achievement-section">
+                        <h5>Cursos impartidos por año:</h5>
+                        <ul class="experience-highlights">
+                            <li>2023: Programación I</li>
+                            <li>2022: Análisis Numerico</li>
+                            <li>2021: Programación Orientada a Objetos</li>
+                            <li>2020: Laboratorio de Computación</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Docencia</span>
+                            <span class="tech-tag">Liderazgo</span>
+                            <span class="tech-tag">Mentoring</span>
+                            <span class="tech-tag">Evaluación</span>
+                            <span class="tech-tag">Pedagogía</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Devenet Position -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Marzo 2023 - Junio 2023</div>
+                    <h3>Full Stack Developer</h3>
+                    <h4>Devenet, La Paz, Bolivia</h4>
+                    <p>Desarrollo de soluciones usando PHP vanilla junto con Materialize, HTML, CSS, JavaScript y jQuery. Gestión de bases de datos con PostgreSQL en entorno Emacs y control de versiones con GitLab.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">GitLab</span>
+                        <span class="tech-tag">Materialize</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section with Different Design -->
+        <div class="text-center mb-4 mt-5">
+            <h3 class="fw-bold">Formación Académica</h3>
+        </div>
+        
+        <div class="education-grid">
+            <div class="education-card completed">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-status">Título Obtenido</div>
+                    <h4>Licenciatura en Informática</h4>
+                    <h5>con mención en Ciencias de la Computación</h5>
+                    <div class="education-period">2018 - 2024</div>
+                    <div class="education-institution">Universidad Mayor de San Andrés</div>
+                    <p>Formación completa en ciencias de la computación, programación, algoritmos, estructuras de datos, ingeniería de software y desarrollo de sistemas.</p>
+                </div>
+            </div>
+
+            <div class="education-card in-progress">
+                <div class="education-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-status">Carrera Paralela - En Curso</div>
+                    <h4>Licenciatura en Estadística</h4>
+                    <h5>con mención en Ciencia de Datos</h5>
+                    <div class="education-period">2023 - Presente</div>
+                    <div class="education-institution">Universidad Mayor de San Andrés</div>
+                    <p>Carrera paralela enfocada en metodologías estadísticas aplicadas a la ciencia de datos, análisis predictivo, machine learning y modelado estadístico avanzado.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Teaching Section -->
+<section id="teaching" class="teaching-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Experiencia Docente</h2>
+            <p class="lead">Experiencia como auxiliar de docencia en la Universidad Mayor de San Andrés, enseñando programación, análisis numérico y desarrollo web.</p>
+        </div>
+        
+        <div class="row gy-4">
+            
+            <div class="col-lg-6 col-md-6">
+                <div class="teaching-card">
+                    <div class="teaching-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="teaching-content">
+                        <h4 class="teaching-title">
+                            <a href="https://www.youtube.com/playlist?list=PLuqyhRhhAni2733xzlRIwRLCCIr1ZhcPA" target="_blank" class="teaching-link">Análisis Numérico</a>
+                        </h4>
+                        <p class="teaching-description">Enseñé a estudiantes sobre métodos numéricos, cubriendo temas desde sistemas de ecuaciones usando el método de Newton, interpolación via splines, regresión lineal, integración de Broyden, hasta Ecuaciones Diferenciales Ordinarias (EDOs) usando métodos Runge-Kutta. Utilizamos principalmente Python, Octave y Matlab, en entornos como Colab, Spyder, Jupyter Notebook, Octave GNU y Matlab IDEs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="teaching-card">
+                    <div class="teaching-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="teaching-content">
+                        <h4 class="teaching-title">
+                            <a href="https://www.youtube.com/playlist?list=PLuqyhRhhAni3qz_1YpfrYuD-9LJF8YsoV" target="_blank" class="teaching-link">Programación Orientada a Objetos</a>
+                        </h4>
+                        <p class="teaching-description">Instruí a estudiantes en los conceptos fundamentales de la Programación Orientada a Objetos (OOP), cubriendo ejercicios, metodologías y desarrollo de interfaces gráficas en Java y C#. Utilizamos varios IDEs incluyendo Eclipse, NetBeans e IntelliJ IDEA para Java, así como SharpDevelop y Visual Studio para C#.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="teaching-card">
+                    <div class="teaching-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="teaching-content">
+                        <h4 class="teaching-title">
+                            <a href="#" class="teaching-link">Programación I</a>
+                        </h4>
+                        <p class="teaching-description">Conduje clases cubriendo los conceptos básicos de programación, incluyendo manipulación de cadenas, arreglos y matrices en Python y Java. Utilizamos entornos de desarrollo como Eclipse, NetBeans, Colab e IntelliJ IDEA para facilitar el aprendizaje y la práctica de los conceptos enseñados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="teaching-card">
+                    <div class="teaching-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="teaching-content">
+                        <h4 class="teaching-title">
+                            <a href="https://www.youtube.com/playlist?list=PLuqyhRhhAni08hX-0f8LEBl4KaosU-CDb" target="_blank" class="teaching-link">Laboratorio de Computación</a>
+                        </h4>
+                        <p class="teaching-description">Enseñé a estudiantes sobre sistemas Linux, comandos Bash y desarrollo web (HTML, CSS y JavaScript). Esta experiencia mejoró mis habilidades docentes y expandió mi conocimiento en tecnologías esenciales.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Digital Credentials Section -->
+<section id="credentials" class="credentials-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Credenciales Digitales</h2>
+            <p class="lead">Plataformas que muestran mis badges, habilidades, certificados y otros logros</p>
+        </div>
+        
+        <div class="credentials-container">
+            <div class="credentials-slider">
+                
+                <div class="credential-card">
+                    <a href="https://www.coursera.org/learner/jhulen-mallo-coursera" target="_blank" class="credential-link">
+                        <div class="credential-image">
+                            <img src="assets/img/coursera.png" alt="Coursera">
+                        </div>
+                        <h3 class="credential-title">Coursera</h3>
+                        <p class="credential-desc">Especializaciones y certificaciones profesionales</p>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <a href="https://www.cloudskillsboost.google/public_profiles/73afbd0d-253b-4bfd-9f41-c95d0b1e65f4" target="_blank" class="credential-link">
+                        <div class="credential-image">
+                            <img src="assets/img/google.png" alt="Google Cloud">
+                        </div>
+                        <h3 class="credential-title">Google Cloud</h3>
+                        <p class="credential-desc">Skill badges y certificaciones en cloud computing</p>
+                    </a>
+                </div>
+
+                <div class="credential-card">
+                    <a href="https://www.credly.com/users/jhulen-mallo" target="_blank" class="credential-link">
+                        <div class="credential-image">
+                            <img src="assets/img/credly.png" alt="Credly">
+                        </div>
+                        <h3 class="credential-title">Credly</h3>
+                        <p class="credential-desc">Badges digitales verificados y certificaciones</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Certifications Section -->
+<section id="certifications" class="certifications-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Certificaciones & Logros</h2>
+            <p class="lead">Más de 30 certificaciones internacionales</p>
+        </div>
+        
+        <!-- Filtros -->
+        <div class="filter-container">
+            <div class="text-center">
+                <h5 class="mb-3" style="color: #94a3b8;">Filtrar por tipo:</h5>
+                <button class="cert-filter-btn active" data-filter="all">Todas</button>
+                <button class="cert-filter-btn" data-filter="specialization">Especializaciones</button>
+                <button class="cert-filter-btn" data-filter="certification">Certificaciones</button>
+                <button class="cert-filter-btn" data-filter="skill-badge">Skill Badges</button>
+                <button class="cert-filter-btn" data-filter="badge">Badges</button>
+            </div>
+        </div>
+        
+        <!-- Contenedor de tarjetas -->
+        <div class="cert-cards-container" id="certCardsContainer">
+
+            <!-- Google Cloud Data Analytics Certificate -->
+            <div class="certification-card" data-type="certification">
+                <div class="cert-type-badge google-cloud">Certificación</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Google Cloud Data Analytics Certificate.png')">
+                    <img src="assets/docs/png/Google Cloud Data Analytics Certificate.png" alt="Google Cloud Data Analytics Certificate">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Google Cloud Data Analytics Certificate</h5>
+                    <p class="cert-description">Certificación profesional en análisis de datos con Google Cloud Platform.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/googlecloud.png" alt="Google Cloud" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--google-cloud-color); font-size: 1.5rem; font-weight: bold;\'>GC</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-google-cloud" onclick="showCertDetails('Google Cloud Data Analytics Certificate', 'google-cloud')"> -->
+                        <button class="cert-details-btn btn-google-cloud" onclick="window.location.href='GC_DataAnalytics.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MLOps Machine -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge coursera">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/MLOps  Machine_page-0001.jpg')">
+                    <img src="assets/docs/png/MLOps  Machine_page-0001.jpg" alt="MLOps Machine">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">MLOps Machine Learning Operations</h5>
+                    <p class="cert-description">Especialización en operaciones de Machine Learning.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-coursera" onclick="showCertDetails('MLOps Machine', 'coursera')"> -->
+                        <button class="cert-details-btn btn-deeplearning" onclick="window.location.href='DL_MLOps.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IBM Data Science Professional Certificate -->
+            <div class="certification-card" data-type="certification">
+                <div class="cert-type-badge ibm">Certificación</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/IBM Data Science Professional Certificate.png')">
+                    <img src="assets/docs/png/IBM Data Science Professional Certificate.png" alt="IBM Data Science Professional Certificate">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">IBM Data Science Professional Certificate</h5>
+                    <p class="cert-description">Certificado profesional en ciencia de datos de IBM.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-ibm" onclick="showCertDetails('IBM Data Science', 'ibm')"> -->
+                        <button class="cert-details-btn btn-ibm" onclick="window.location.href='IBM_Data_Science.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Cloud Computing Foundations Certificate -->
+            <div class="certification-card" data-type="certification">
+                <div class="cert-type-badge google-cloud">Certificación</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Google Cloud Computing Foundations Certificate.png')">
+                    <img src="assets/docs/png/Google Cloud Computing Foundations Certificate.png" alt="Google Cloud Computing Foundations Certificate">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Google Cloud Computing Foundations Certificate</h5>
+                    <p class="cert-description">Certificación en fundamentos de computación en la nube de Google.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/googlecloud.png" alt="Google Cloud" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--google-cloud-color); font-size: 1.5rem; font-weight: bold;\'>GC</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-google-cloud" onclick="showCertDetails('Google Cloud Computing Foundations Certificate', 'google-cloud')"> -->
+                        <button class="cert-details-btn btn-google-cloud" onclick="window.location.href='GC_GoogleComputing.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Open Source Software Development -->
+            <div class="certification-card" data-type="badge">
+                <div class="cert-type-badge linux">Badge</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Open Source Software Development.png')">
+                    <img src="assets/docs/png/Open Source Software Development.png" alt="Open Source Software Development">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Open Source Software Development</h5>
+                    <p class="cert-description">Desarrollo de software de código abierto.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/linuxfoundations.png" alt="Linux Foundation" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: #f7df1e; font-size: 1.5rem; font-weight: bold;\'>LF</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-linux" onclick="showCertDetails('Open Source Software Development', 'linux')"> -->
+                        <button class="cert-details-btn btn-linux" onclick="window.location.href='Linux_Open_Source.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics for Machine Learning and Data Science -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge deeplearning">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Mathematics for Machine Learning and Data Science_page-0001.jpg')">
+                    <img src="assets/docs/png/Mathematics for Machine Learning and Data Science_page-0001.jpg" alt="Mathematics for Machine Learning and Data Science">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Mathematics for Machine Learning and Data Science</h5>
+                    <p class="cert-description">Matemáticas para Machine Learning y ciencia de datos.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/deeplearning.png" alt="DeepLearning.AI" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--deeplearning-color); font-size: 1.5rem; font-weight: bold;\'>DL</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-deeplearning" onclick="showCertDetails('Mathematics for Machine Learning and Data Science', 'deeplearning')"> -->
+                        <button class="cert-details-btn btn-deeplearning" onclick="window.location.href='DL_Mathematics.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DeepLearning.AI TensorFlow Developer -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge deeplearning">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Deep Learning Certificate.png')">
+                    <img src="assets/docs/png/Deep Learning Certificate.png" alt="DeepLearning.AI TensorFlow Developer">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">DeepLearning.AI TensorFlow Developer</h5>
+                    <p class="cert-description">Especialización completa en desarrollo con TensorFlow.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/deeplearning.png" alt="DeepLearning.AI" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--deeplearning-color); font-size: 1.5rem; font-weight: bold;\'>DL</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-deeplearning" onclick="showCertDetails('DeepLearning.AI TensorFlow Developer', 'deeplearning')"> -->
+                        <button class="cert-details-btn btn-deeplearning" onclick="window.location.href='DL_TensorFlow_Developer.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IBM Data Science Professional Certificate -->
+            <div class="certification-card" data-type="certification">
+                <div class="cert-type-badge ibm">Certificación</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/IBM Data Analyst Professional Certificate.png')">
+                    <img src="assets/docs/png/IBM Data Analyst Professional Certificate.png" alt="IBM Data Science Professional Certificate">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">IBM Data Analyst Professional Certificate</h5>
+                    <p class="cert-description">Certificado profesional en análisis de datos de IBM.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-ibm" onclick="showCertDetails('IBM Data Science', 'ibm')"> -->
+                        <button class="cert-details-btn btn-ibm" onclick="window.location.href='IBM_Data_Analyst.html'">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Introduction to Data Science -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge ibm">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Introduction to Data Science_page-0001.jpg')">
+                    <img src="assets/docs/png/Introduction to Data Science_page-0001.jpg" alt="Introduction to Data Science">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Introduction to Data Science</h5>
+                    <p class="cert-description">Introducción completa a la ciencia de datos.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-ibm" onclick="showCertDetails('Introduction to Data Science', 'ibm')"> -->
+                        <button class="cert-details-btn btn-ibm">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science Fundamentals with Python and SQL -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge ibm">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Data Science Fundamentals with Python and SQL_page-0001.jpg')">
+                    <img src="assets/docs/png/Data Science Fundamentals with Python and SQL_page-0001.jpg" alt="Data Science Fundamentals with Python and SQL">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Data Science Fundamentals with Python and SQL</h5>
+                    <p class="cert-description">Fundamentos de ciencia de datos con Python y SQL.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-ibm" onclick="showCertDetails('Data Science Fundamentals with Python and SQL', 'ibm')"> -->
+                        <button class="cert-details-btn btn-ibm">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DeepLearning.AI TensorFlow Developer -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge deeplearning">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/DeepLearning.AI TensorFlow Developer_page-0001.jpg')">
+                    <img src="assets/docs/png/DeepLearning.AI TensorFlow Developer_page-0001.jpg" alt="DeepLearning.AI TensorFlow Developer">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">DeepLearning.AI TensorFlow Developer</h5>
+                    <p class="cert-description">Especialización completa en desarrollo con TensorFlow.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/deeplearning.png" alt="DeepLearning.AI" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--deeplearning-color); font-size: 1.5rem; font-weight: bold;\'>DL</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-deeplearning" onclick="showCertDetails('DeepLearning.AI TensorFlow Developer', 'deeplearning')"> -->
+                        <button class="cert-details-btn btn-deeplearning">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Build and Deploy Machine Learning Solutions -->
+            <div class="certification-card" data-type="skill-badge">
+                <div class="cert-type-badge google-cloud">Skill Badge</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Build and Deploy Machine Learning Solutions.png')">
+                    <img src="assets/docs/png/Build and Deploy Machine Learning Solutions.png" alt="Build and Deploy Machine Learning Solutions">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Build and Deploy Machine Learning Solutions</h5>
+                    <p class="cert-description">Skill badge para construcción y despliegue de soluciones de ML.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/googlecloud.png" alt="Google Cloud" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--google-cloud-color); font-size: 1.5rem; font-weight: bold;\'>GC</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-google-cloud" onclick="showCertDetails('Build and Deploy Machine Learning Solutions', 'google-cloud')"> -->
+                        <button class="cert-details-btn btn-google-cloud">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prepare Data for ML APIs on Google -->
+            <div class="certification-card" data-type="skill-badge">
+                <div class="cert-type-badge google-cloud">Skill Badge</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Prepare Data for ML APIs on Google.png')">
+                    <img src="assets/docs/png/Prepare Data for ML APIs on Google.png" alt="Prepare Data for ML APIs on Google">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Prepare Data for ML APIs on Google</h5>
+                    <p class="cert-description">Skill badge para preparación de datos para APIs de ML en Google Cloud.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/googlecloud.png" alt="Google Cloud" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--google-cloud-color); font-size: 1.5rem; font-weight: bold;\'>GC</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-google-cloud" onclick="showCertDetails('Prepare Data for ML APIs on Google', 'google-cloud')"> -->
+                        <button class="cert-details-btn btn-google-cloud">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Natural Language Processing -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge deeplearning">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Natural Language Processing_page-0001.jpg')">
+                    <img src="assets/docs/png/Natural Language Processing_page-0001.jpg" alt="Natural Language Processing">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Natural Language Processing</h5>
+                    <p class="cert-description">Especialización completa en procesamiento de lenguaje natural.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/deeplearning.png" alt="DeepLearning.AI" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--deeplearning-color); font-size: 1.5rem; font-weight: bold;\'>DL</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-deeplearning" onclick="showCertDetails('Natural Language Processing', 'deeplearning')"> -->
+                        <button class="cert-details-btn btn-deeplearning">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics for Engineers -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge coursera">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Mathematics for Engineers_page-0001.jpg')">
+                    <img src="assets/docs/png/Mathematics for Engineers_page-0001.jpg" alt="Mathematics for Engineers">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Mathematics for Engineers</h5>
+                    <p class="cert-description">Matemáticas aplicadas para ingenieros.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/hongkong.png" alt="University Hong Kong" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-coursera" onclick="showCertDetails('Mathematics for Engineers', 'coursera')"> -->
+                        <button class="cert-details-btn btn-coursera">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microsoft Power BI Data Analyst -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge microsoft">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Microsoft Power BI Data Analyst_page-0001.jpg')">
+                    <img src="assets/docs/png/Microsoft Power BI Data Analyst_page-0001.jpg" alt="Microsoft Power BI Data Analyst">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Microsoft Power BI Data Analyst</h5>
+                    <p class="cert-description">Analista de datos con Microsoft Power BI.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/microsoft.png" alt="Microsoft" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--microsoft-color); font-size: 1.5rem; font-weight: bold;\'>MS</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-microsoft" onclick="showCertDetails('Microsoft Power BI Data Analyst', 'microsoft')"> -->
+                        <button class="cert-details-btn btn-microsoft">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Applied Data Science -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge ibm">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Applied Data Science_page-0001.jpg')">
+                    <img src="assets/docs/png/Applied Data Science_page-0001.jpg" alt="Applied Data Science">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Applied Data Science</h5>
+                    <p class="cert-description">Ciencia de datos aplicada con IBM.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-ibm" onclick="showCertDetails('Applied Data Science', 'ibm')"> -->
+                        <button class="cert-details-btn btn-ibm">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Engineering, Big Data, and Machine GCP -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge google-cloud">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Data Engineering, Big Data, and Machine GCP_page-0001.jpg')">
+                    <img src="assets/docs/png/Data Engineering, Big Data, and Machine GCP_page-0001.jpg" alt="Data Engineering, Big Data, and Machine GCP">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Data Engineering, Big Data, and Machine GCP</h5>
+                    <p class="cert-description">Ingeniería de datos y Big Data en Google Cloud Platform.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/googlecloud.png" alt="Google Cloud" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--google-cloud-color); font-size: 1.5rem; font-weight: bold;\'>GC</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-google-cloud" onclick="showCertDetails('Data Engineering, Big Data, and Machine GCP', 'google-cloud')"> -->
+                        <button class="cert-details-btn btn-google-cloud">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Learning -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge deeplearning">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Deep Learning_page-0001.jpg')">
+                    <img src="assets/docs/png/Deep Learning_page-0001.jpg" alt="Deep Learning">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Deep Learning</h5>
+                    <p class="cert-description">Especialización completa en Deep Learning.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/deeplearning.png" alt="DeepLearning.AI" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--deeplearning-color); font-size: 1.5rem; font-weight: bold;\'>DL</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-deeplearning" onclick="showCertDetails('Deep Learning', 'deeplearning')"> -->
+                        <button class="cert-details-btn btn-deeplearning">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Architecting with Google Compute Engine -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge google-cloud">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Architecting with Google Compute Engine_page-0001.jpg')">
+                    <img src="assets/docs/png/Architecting with Google Compute Engine_page-0001.jpg" alt="Architecting with Google Compute Engine">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Architecting with Google Compute Engine</h5>
+                    <p class="cert-description">Arquitectura con Google Compute Engine.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/googlecloud.png" alt="Google Cloud" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--google-cloud-color); font-size: 1.5rem; font-weight: bold;\'>GC</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-google-cloud" onclick="showCertDetails('Architecting with Google Compute Engine', 'google-cloud')"> -->
+                        <button class="cert-details-btn btn-google-cloud">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AWS Fundamentals -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge aws">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/AWS Fundamentals_page-0001.jpg')">
+                    <img src="assets/docs/png/AWS Fundamentals_page-0001.jpg" alt="AWS Fundamentals">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">AWS Fundamentals</h5>
+                    <p class="cert-description">Fundamentos de Amazon Web Services.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/aws.png" alt="AWS" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: #ff9900; font-size: 1.5rem; font-weight: bold;\'>AWS</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-aws" onclick="showCertDetails('AWS Fundamentals', 'aws')"> -->
+                        <button class="cert-details-btn btn-aws">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Cloud Database -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge google-cloud">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Google Cloud Database_page-0001.jpg')">
+                    <img src="assets/docs/png/Google Cloud Database_page-0001.jpg" alt="Google Cloud Database">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Google Cloud Database Engineer</h5>
+                    <p class="cert-description">Bases de datos en Google Cloud Platform.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/googlecloud.png" alt="Google Cloud" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--google-cloud-color); font-size: 1.5rem; font-weight: bold;\'>GC</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-google-cloud" onclick="showCertDetails('Google Cloud Database', 'google-cloud')"> -->
+                        <button class="cert-details-btn btn-google-cloud">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IBM Data Analyst -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge ibm">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/IBM Data Analyst_page-0001.jpg')">
+                    <img src="assets/docs/png/IBM Data Analyst_page-0001.jpg" alt="IBM Data Analyst">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">IBM Data Analyst</h5>
+                    <p class="cert-description">Analista de datos profesional de IBM.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-ibm" onclick="showCertDetails('IBM Data Analyst', 'ibm')"> -->
+                        <button class="cert-details-btn btn-ibm">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IBM Data Science -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge ibm">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/IBM Data Science_page-0001.jpg')">
+                    <img src="assets/docs/png/IBM Data Science_page-0001.jpg" alt="IBM Data Science">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">IBM Data Science</h5>
+                    <p class="cert-description">Especialización completa en ciencia de datos de IBM.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/IBM.png" alt="IBM" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--coursera-color); font-size: 1.5rem; font-weight: bold;\'>CR</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-ibm" onclick="showCertDetails('IBM Data Science', 'ibm')"> -->
+                        <button class="cert-details-btn btn-ibm">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Applications for Everybody -->
+            <div class="certification-card" data-type="specialization">
+                <div class="cert-type-badge michigan">Especialización</div>
+                <div class="cert-image-container" onclick="openCertModal('assets/docs/png/Web Applications for Everybody_page-0001.jpg')">
+                    <img src="assets/docs/png/Web Applications for Everybody_page-0001.jpg" alt="Web Applications for Everybody">
+                    <div class="cert-zoom-overlay">
+                        <i class="fas fa-search-plus cert-zoom-icon"></i>
+                    </div>
+                </div>
+                <div class="cert-card-body">
+                    <h5 class="cert-title">Web Applications for Everybody</h5>
+                    <p class="cert-description">Desarrollo de aplicaciones web para todos.</p>
+                    <div class="cert-details-section">
+                        <div class="cert-platform-icon">
+                            <img src="assets/docs/png/universitymichigan.png" alt="University of Michigan" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'color: var(--michigan-color); font-size: 1.5rem; font-weight: bold;\'>UM</div>'">
+                        </div>
+                        <!-- <button class="cert-details-btn btn-michigan" onclick="showCertDetails('Web Applications for Everybody', 'michigan')"> -->
+                        <button class="cert-details-btn btn-michigan">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-more-container">
+            <button id="showMoreBtn" class="show-more-btn">
+                Mostrar más certificaciones <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Modal personalizado para mostrar imagen ampliada -->
+    <div id="certImageModal" class="cert-image-modal" onclick="closeCertModal()">
+        <span class="cert-close-modal" onclick="closeCertModal()">&times;</span>
+        <div class="cert-modal-content-custom">
+            <img id="certModalImage" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <h2 class="fw-bold mb-4">Contacto</h2>
+                <!-- <p class="lead mb-4">
+                    Mi objetivo es construir soluciones escalables que generen valor real 
+                    a través de los datos y la tecnología.
+                </p>
+                <p class="mb-4">
+                    Conectemos para discutir cómo puedo ayudar a transformar tus datos 
+                    en ventajas competitivas.
+                </p>itivas.
+                </p> -->
+                
+                <div class="row text-center mt-4">
+                    <div class="col-md-6 mb-3">
+                        <i class="fas fa-envelope fa-2x mb-2"></i>
+                        <h6>Email</h6>
+                        <p>jmalloq@gmail.com</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <i class="fab fa-linkedin fa-2x mb-2"></i>
+                        <h6>LinkedIn</h6>
+                        <p>linkedin.com/in/jhulen-mallo</p>
+                    </div>
+                    <!-- <div class="col-md-4 mb-3">
+                        <i class="fab fa-github fa-2x mb-2"></i>
+                        <h6>GitHub</h6>
+                        <p>github.com/tu-usuario</p>
+                    </div> -->
+                </div>
+                
+                <div class="mt-4">
+                    <a href="mailto:tu-email@ejemplo.com" class="btn-primary me-3">
+                        <i class="fas fa-envelope me-2"></i>Enviar Email
+                    </a>
+                    <a href="#" class="btn-secondary">
+                        <i class="fas fa-download me-2"></i>Descargar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Jhulen Mallo.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#home" class="text-white">
+                        <i class="fas fa-arrow-up"></i> Volver arriba
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Certificaciones -->
+    <div class="modal fade" id="certModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Certificación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="" class="img-fluid mb-3 rounded">
+                    <p id="modalDescription" class="lead"></p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="#" class="btn btn-primary">Ver Detalles Completos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
