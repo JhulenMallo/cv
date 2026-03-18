@@ -1,17 +1,8 @@
-        :root {
-            --primary-blue: #1e40af;
-            --secondary-blue: #3b82f6;
-            --dark-bg: #0f172a;
-            --light-gray: #f8fafc;
-            --text-light: #cbd5e1;
-            --text-dark: #1f2937;
-        }
-
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
-            background: var(--light-gray);
+            background: var(--dark-bg);
         }
 
         /* Header - More Compact */
@@ -62,7 +53,7 @@
         .cert-main-image {
             max-width: 300px;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             transition: transform 0.3s ease;
@@ -106,11 +97,17 @@
 
         /* Content Sections */
         .content-section {
-            background: white;
+            background: var(--grey-bg);
+            border: 1px solid var(--border-color);
             margin: 2rem 0;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
             overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .content-section:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
         }
 
         .section-header {
@@ -127,22 +124,23 @@
         /* Course Modules Grid */
         .modules-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1.5rem;
             margin-top: 1.5rem;
         }
 
         .module-card {
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s ease;
-            background: white;
+            background: var(--light-gray);
         }
 
         .module-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-color: var(--secondary-blue);
         }
 
         .module-image {
@@ -169,14 +167,14 @@
         }
 
         .module-description {
-            color: #6b7280;
+            color: var(--text-light);
             font-size: 0.95rem;
             margin-bottom: 1rem;
         }
 
         .module-duration {
             font-size: 0.85rem;
-            color: #9ca3af;
+            color: var(--text-light);
             display: flex;
             align-items: center;
             gap: 5px;

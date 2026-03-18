@@ -6,16 +6,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxClose = document.getElementById('lightboxClose');
 
     // Add click listeners to all clickable images
-    document.querySelectorAll('.clickable-img').forEach(img => {
-        img.addEventListener('click', function() {
-            const caption = this.getAttribute('data-caption') || this.alt;
-            lightboxImage.src = this.src;
-            lightboxImage.alt = this.alt;
-            lightboxCaption.textContent = caption;
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
+    function bindLightbox() {
+        document.querySelectorAll('.clickable-img').forEach(img => {
+            // Eliminar listener previo si existe para evitar duplicados
+            img.removeEventListener('click', clickHandler);
+            img.addEventListener('click', clickHandler);
         });
-    });
+    }
+
+    function clickHandler(e) {
+        const caption = this.getAttribute('data-caption') || this.alt;
+        lightboxImage.src = this.src;
+        lightboxImage.alt = this.alt;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    bindLightbox();
+    document.addEventListener('content-loaded', bindLightbox);
+
 
     // Close lightbox
     function closeLightbox() {
@@ -41,8 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            // Asegurarnos de que todavía sea un ancla en el momento del click 
+            // (el script principal podría haber cambiado el href dinámicamente)
+            if (!href.startsWith('#') || href === '#') return;
+            
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',
