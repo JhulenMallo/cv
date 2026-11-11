@@ -1,0 +1,20 @@
+\RequirePackage{fancyhdr}
+\fancypagestyle{fancy}{%
+\fancyhf{}
+\lhead{\phone \\
+        \city \\
+	    \href{mailto:\email}{\email}}
+	\chead{%
+	    \centering {\Huge \skills \name \vspace{.25em}} \\
+	    {\color{highlight} \Large{\role}}}%
+	    \rhead{\href{https://jhulenmallo.github.io/cv/}{Sitio web}\\
+            \href{https://jhulenmallo.github.io/cv/}{jhulenmallo.github.io/cv/} \\
+	    \href{https://www.linkedin.com/in/\LinkedIn}{linkedin.com/in/\LinkedIn}}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{highlight}\leaders\hrule height \headrulewidth\hfill}}
+}
+\pagestyle{fancy}
+
+\setlength{\headheight}{58pt}
+\setlength{\headsep}{5pt}

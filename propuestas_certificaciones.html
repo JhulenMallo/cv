@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de componentes · Jhulen Mallo</title>
+    <meta name="theme-color" content="#101720">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <!-- Mismas librerías base de tu sitio -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=2093d21c2bae">
+    <script src="assets/js/theme-init.js?v=c1a056a810c9"></script>
+    <!-- Fancybox para zoom de imágenes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="assets/css/propuestas-certificaciones.css?v=f99f4c2ba215">
+
+</head>
+<body class="proposals-page">
+    <svg aria-hidden="true" class="icon-defs" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+        <symbol id="icon-external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+        <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+        <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></symbol>
+        <symbol id="icon-print" viewBox="0 0 24 24"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7z"/></symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    </svg>
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+    <header class="site-header">
+        <nav class="wrap nav-shell" aria-label="Navegación principal">
+            <a class="wordmark" href="index.html#home" aria-label="Jhulen Mallo, inicio">jm<span>.</span><span class="wordmark-label"> / datos & código</span></a>
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-button" type="button" aria-label="Activar tema claro" aria-pressed="false"><svg aria-hidden="true" class="icon theme-sun"><use href="#icon-sun"/></svg><svg aria-hidden="true" class="icon theme-moon"><use href="#icon-moon"/></svg></button>
+                <button id="menuToggle" class="icon-button menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarNav"><svg aria-hidden="true" class="icon"><use href="#icon-menu"/></svg></button>
+            </div>
+            <div id="navbarNav" class="nav-links">
+                <a href="index.html#about">Perfil</a>
+                <a href="index.html#skills">Competencias</a>
+                <a href="index.html#work">Proyectos</a>
+                <a href="index.html#experience">Experiencia</a>
+                <a href="index.html#certifications">Credenciales</a>
+                <a href="index.html#contact" class="nav-contact">Conversemos <svg aria-hidden="true" class="icon"><use href="#icon-external"/></svg></a>
+            </div>
+        </nav>
+    </header>
+    <main id="main" class="wrap proposals-main">
+
+        <div class="page-header">
+            <p class="eyebrow">DISEÑO / GALERÍA DE COMPONENTES</p>
+            <h1>Una misma identidad. Distintas formas.</h1>
+            <p class="lead mb-0">Ejemplos de tarjetas y componentes para explorar la presentación de las credenciales.</p>
+        </div>
+
+        <!-- PROPUESTA A -->
+        <h2 class="proposal-title">Propuesta A: "Modern Minimalist" (Glassmorphism)</h2>
+        <p class="text-center text-muted mb-5">Diseño súper limpio. Tarjetas muy redondeadas, contornos borrosos y con gran espacio negativo. Es el equivalente a macOS / iOS Dashboard.</p>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Sample Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="prop-a-card">
+                    <span class="prop-a-tag"><i class="fas fa-star text-warning"></i> Especialización</span>
+                    <img src="assets/docs/png/cert-data-science-p1.jpg" alt="IBM" class="prop-a-img">
+                    <h3 class="prop-a-title">IBM Data Science Profesional</h3>
+                    <div class="prop-a-provider">
+                        <!-- Simulate icon image -->
+                        <div class="prop-a-icon bg-white rounded-circle d-flex align-items-center justify-content-center border" style="padding:2px">
+                             <img src="assets/docs/png/logo-ibm.png" style="width:100%; height:auto;">
+                        </div>
+                        IBM Corporation
+                    </div>
+                    <a href="#" class="prop-a-btn">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Sample Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="prop-a-card">
+                    <span class="prop-a-tag">Curso Individual</span>
+                    <img src="assets/docs/png/cert-gcp-data-engineering-p1.jpg" alt="GCP" class="prop-a-img">
+                    <h3 class="prop-a-title">Google Cloud Data Analytics</h3>
+                    <div class="prop-a-provider">
+                        <div class="prop-a-icon bg-white rounded-circle d-flex align-items-center justify-content-center border" style="padding:4px">
+                            <img src="assets/docs/png/logo-googlecloud.png" style="width:100%; height:auto;">
+                        </div>
+                        Google Cloud Platform
+                    </div>
+                    <a href="#" class="prop-a-btn">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <hr class="my-5" style="border-color: var(--border-color); opacity: 0.5;">
+
+
+        <!-- PROPUESTA B -->
+        <h2 class="proposal-title">Propuesta B: "Tech Badge Grid" (GitHub Style)</h2>
+        <p class="text-center text-muted mb-5">Un diseño ultracompacto para ingenieros. Funciona excelente en modo oscuro, iluminando las cajas con "neón" según la marca corporativa (GCP Azul o AWS Naranja).</p>
+
+        <div class="prop-b-grid">
+            <!-- Sample Badge 1 IBM -->
+            <div class="prop-b-card ibm">
+                <div class="prop-b-img-wrapper">
+                    <img src="assets/docs/png/logo-ibm.png" style="width:80%; height:auto;" alt="IBM Logo">
+                </div>
+                <div class="prop-b-title">IBM Data Science Analyst</div>
+                <div class="prop-b-provider">Especialización • IBM</div>
+                <button class="prop-b-btn mt-auto">Revisar Módulos</button>
+            </div>
+
+            <!-- Sample Badge 2 GCP -->
+            <div class="prop-b-card gcp">
+                <div class="prop-b-img-wrapper" style="padding: 15px">
+                    <img src="assets/docs/png/logo-googlecloud.png" alt="GCP Logo" class="prop-b-img">
+                </div>
+                <div class="prop-b-title">GCP Big Data & Machine Learning</div>
+                <div class="prop-b-provider">Profesional • Google</div>
+                <button class="prop-b-btn mt-auto">Revisar Módulos</button>
+            </div>
+
+            <!-- Sample Badge 3 Michigan -->
+            <div class="prop-b-card" style="--hover-color:#00274C;">
+                <div class="prop-b-img-wrapper">
+                    <img src="assets/docs/png/logo-universitymichigan.png" style="width:70%; height:auto;" alt="M Logo"> <!-- Simulated Image -->
+                </div>
+                <div class="prop-b-title">Web Applications for Everybody</div>
+                <div class="prop-b-provider">Certificación • Michigan</div>
+                <button class="prop-b-btn mt-auto">Revisar Módulos</button>
+            </div>
+
+            <!-- Sample Badge 4 AWS -->
+            <div class="prop-b-card" style="border-color: #30363d;" onmouseover="this.style.borderColor='#ff9900'; this.style.boxShadow='0 0 15px rgba(255,153,0,0.4)'" onmouseout="this.style.borderColor=''; this.style.boxShadow=''">
+                <div class="prop-b-img-wrapper" style="padding: 10px;">
+                    <img src="assets/docs/png/logo-aws.png" class="prop-b-img" alt="AWS Logo">
+                </div>
+                <div class="prop-b-title">AWS Fundamentals Specialization</div>
+                <div class="prop-b-provider">Técnica • AWS</div>
+                <button class="prop-b-btn mt-auto">Revisar Módulos</button>
+            </div>
+        </div>
+
+
+        <!-- Separador -->
+        <hr class="my-5" style="border-color: var(--border-color); opacity: 0.5;">
+
+
+        <!-- PROPUESTA C -->
+        <h2 class="proposal-title">Propuesta C: "Corporate Horizontal" (LinkedIn Style)</h2>
+        <p class="text-center text-muted mb-5">Diseño tipo lista formal. Ocupa todo el formato horizontal y luce sumamente empresarial a la vista de reclutadores y gerentes.</p>
+
+        <div class="prop-c-container">
+            <!-- Row 1 -->
+            <div class="prop-c-card">
+                <div class="prop-c-img-col">
+                    <img src="assets/docs/png/cert-data-science-p1.jpg" alt="Cert" class="prop-c-img">
+                </div>
+                <div class="prop-c-body">
+                    <h3 class="prop-c-title">IBM Data Science Specialization</h3>
+                    <div class="prop-c-subtitle">
+                        <img src="assets/docs/png/logo-ibm.png" style="height: 20px;">
+                        <span class="fw-medium">IBM Training Corporation</span>
+                    </div>
+                    <div class="prop-c-meta">
+                        Expedido: May 2023 · Credencial: Credly / Coursera
+                    </div>
+                    <a href="#" class="prop-c-btn">Explorar Detalles Analíticos</a>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+             <div class="prop-c-card">
+                <div class="prop-c-img-col">
+                    <img src="assets/docs/png/cert-gcp-data-engineering-p1.jpg" alt="Cert" class="prop-c-img">
+                </div>
+                <div class="prop-c-body">
+                    <h3 class="prop-c-title">Google Cloud Data Analytics Professional</h3>
+                    <div class="prop-c-subtitle">
+                        <img src="assets/docs/png/logo-googlecloud.png" style="height: 20px;">
+                        <span class="fw-medium">Google Cloud Training Platform</span>
+                    </div>
+                    <div class="prop-c-meta">
+                        Expedido: Ene 2024 · Validado Oficialmente
+                    </div>
+                    <a href="#" class="prop-c-btn">Explorar Detalles Analíticos</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <hr class="my-5" style="border-color: var(--border-color); opacity: 0.5;">
+
+        <!-- PROPUESTA D -->
+        <h2 class="proposal-title">Propuesta D: "Asymmetric Start-up"</h2>
+        <p class="text-center text-muted mb-4">Diseño radical que rompe el aburrimiento rectangular clásico. Utiliza divisores diagonales, muy popular en startups modernas tipo Stripe o Vercel.</p>
+
+        <!-- Filtro Píldora -->
+        <div class="text-center">
+            <div class="pill-filter">
+                <button class="pill-btn active">Todos</button>
+                <button class="pill-btn">Especializaciones</button>
+                <button class="pill-btn">Badges</button>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Asymmetric Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="prop-d-card">
+                    <div class="prop-d-img-container" style="background: linear-gradient(135deg, #0f172a, #1e293b);">
+                        <img src="assets/docs/png/cert-data-science-p1.jpg" alt="Cert" class="prop-d-img">
+                        <img src="assets/docs/png/logo-ibm.png" alt="Logo" class="prop-d-logo">
+                    </div>
+                    <div class="prop-d-body">
+                        <span class="prop-d-tag">Especialización Avanzada</span>
+                        <h3 class="prop-d-title">IBM Data Science Profesional</h3>
+                        <p class="text-muted" style="font-size: 0.9rem;">Certificación completa que abarca metodologías analíticas, Python, SQL y Machine Learning de nivel empresarial.</p>
+                    </div>
+                    <div class="prop-d-footer mx-3 mb-3">
+                        <span style="font-size: 0.85rem; color: var(--text-light);"><i class="fas fa-calendar-alt me-1"></i> May 2023</span>
+                        <a href="#" class="prop-a-btn" style="padding: 4px 15px; font-size: 0.85rem;"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asymmetric Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="prop-d-card">
+                    <div class="prop-d-img-container" style="background: linear-gradient(135deg, #0d47a1, #1976d2);">
+                        <img src="assets/docs/png/cert-gcp-data-engineering-p1.jpg" alt="Cert" class="prop-d-img">
+                        <img src="assets/docs/png/logo-googlecloud.png" alt="Logo" class="prop-d-logo">
+                    </div>
+                    <div class="prop-d-body">
+                        <span class="prop-d-tag">Google Cloud Platform</span>
+                        <h3 class="prop-d-title">GCP Big Data & Machine Learning</h3>
+                        <p class="text-muted" style="font-size: 0.9rem;">Habilidades en ingeniería de datos profunda utilizando arquitecturas serverless en la nube de Google.</p>
+                    </div>
+                    <div class="prop-d-footer mx-3 mb-3">
+                        <span style="font-size: 0.85rem; color: var(--text-light);"><i class="fas fa-calendar-alt me-1"></i> Ene 2024</span>
+                        <a href="#" class="prop-a-btn" style="padding: 4px 15px; font-size: 0.85rem;"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Separador -->
+        <hr class="my-5" style="border-color: var(--border-color); opacity: 0.5;">
+
+        <!-- PROPUESTA E -->
+        <h2 class="proposal-title">Propuesta E: "Interactive 3D Flip"</h2>
+        <p class="text-center text-muted mb-4">La vista inicial es puramente una galería visual. Al pasar el puntero, las tarjetas rotan mágicamente 180 grados mostrando la información de validación por detrás. (Haz hover en las tarjetas).</p>
+
+        <!-- Dropdown select -->
+        <div class="text-end mb-4">
+            <select class="modern-select">
+                <option value="all">Todas las Certificaciones</option>
+                <option value="spec">Solo Especializaciones</option>
+                <option value="course">Solo Cursos Individuales</option>
+            </select>
+        </div>
+
+        <div class="flip-grid">
+            <!-- Flip Card 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-img-wrap">
+                            <img src="assets/docs/png/cert-data-science-p1.jpg" alt="Cert" class="flip-img">
+                        </div>
+                        <div class="flip-title">IBM Data Science Analyst</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-back-title">IBM Data Science</div>
+                        <div class="flip-line"><i class="fas fa-building"></i> <span>IBM Corporation</span></div>
+                        <div class="flip-line"><i class="fas fa-calendar-check"></i> <span>Obtenido en Mayo 2023</span></div>
+                        <div class="flip-line"><i class="fas fa-id-badge"></i> <span>Credencial vía Credly</span></div>
+                        <button class="flip-btn mt-4">Abrir Evidencia</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-img-wrap">
+                            <img src="assets/docs/png/cert-aws-fundamentals-p1.jpg" alt="Cert" class="flip-img">
+                        </div>
+                        <div class="flip-title">AWS Fundamentals</div>
+                    </div>
+                    <div class="flip-card-back" style="background: linear-gradient(135deg, #ff9900, #e68a00);">
+                        <div class="flip-back-title">AWS Fundamentals</div>
+                        <div class="flip-line"><i class="fas fa-cloud"></i> <span>Amazon Web Services</span></div>
+                        <div class="flip-line"><i class="fas fa-calendar-check"></i> <span>Especialidad Cloud</span></div>
+                        <div class="flip-line"><i class="fas fa-id-badge"></i> <span>Oficial por AWS</span></div>
+                        <button class="flip-btn mt-4" style="color:#ff9900;">Abrir Evidencia</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flip Card 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="flip-img-wrap">
+                            <img src="assets/docs/png/cert-deep-learning-p1.jpg" alt="Cert" class="flip-img">
+                        </div>
+                        <div class="flip-title">DeepLearning.AI Advanced</div>
+                    </div>
+                    <div class="flip-card-back" style="background: linear-gradient(135deg, #6c5ece, #4b3e99);">
+                        <div class="flip-back-title">DeepLearning.AI</div>
+                        <div class="flip-line"><i class="fas fa-brain"></i> <span>Neural Networks & AI</span></div>
+                        <div class="flip-line"><i class="fas fa-calendar-check"></i> <span>DeepLearning Entity</span></div>
+                        <div class="flip-line"><i class="fas fa-id-badge"></i> <span>Validado Oficial</span></div>
+                        <button class="flip-btn mt-4" style="color:#6c5ece;">Abrir Evidencia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Separador -->
+        <hr class="my-5" style="border-color: var(--border-color); opacity: 0.5;">
+
+        <!-- PROPUESTA F -->
+        <h2 class="proposal-title">Propuesta F: "Accordion Flat Minimalist"</h2>
+        <p class="text-center text-muted mb-4">Rompe totalmente con la visualización pesada. Certificados listados como elegantes líneas de texto que se expanden a detalle únicamente cuando te interesan. Ideal para perfiles muy Sr o Tech Leads.</p>
+
+        <!-- Invisible Tags Filter -->
+        <div class="invisible-tags">
+            <div class="i-tag active">Vista Completa</div>
+            <div class="i-tag">Analítica de Datos</div>
+            <div class="i-tag">Cloud Native AWS/GCP</div>
+            <div class="i-tag">Machine Learning</div>
+        </div>
+
+        <div class="accordion-wrapper">
+            <!-- Accordion 1 -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="this.parentElement.classList.toggle('open')">
+                    <img src="assets/docs/png/logo-ibm.png" class="acc-logo">
+                    <span class="acc-title">IBM Data Science Specialization</span>
+                    <span class="acc-meta d-none d-md-inline">May 2023</span>
+                    <i class="fas fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="acc-body">
+                    <div class="acc-content-flex">
+                        <img src="assets/docs/png/cert-data-science-p1.jpg" class="acc-img">
+                        <div>
+                            <h5>Validación Profesional por IBM Corporation</h5>
+                            <p class="text-muted">Acreditación exhaustiva que comprende el uso de librerías Python, manipulación de algoritmos estadísticos e implementación en la nube para procesamiento avanzado de datos.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary me-2">Data Science</span>
+                                <span class="badge bg-secondary me-2">Python</span>
+                                <span class="badge bg-secondary">Machine Learning</span>
+                            </div>
+                            <a href="#" class="prop-c-btn"><i class="fas fa-external-link-alt me-2"></i>Ir a Credly</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion 2 -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="this.parentElement.classList.toggle('open')">
+                    <img src="assets/docs/png/logo-googlecloud.png" class="acc-logo">
+                    <span class="acc-title">Google Cloud Database & Architecture</span>
+                    <span class="acc-meta d-none d-md-inline">Ene 2024</span>
+                    <i class="fas fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="acc-body">
+                    <div class="acc-content-flex">
+                        <img src="assets/docs/png/cert-gcp-database-engineer-p1.jpg" class="acc-img">
+                        <div>
+                            <h5>Acreditado por Google Cloud Platform</h5>
+                            <p class="text-muted">Certificación enfocada en el diseño, migración e instrumentación de soluciones de bases de datos operativas integradas en ecosistemas de Google Cloud.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary me-2">Cloud DB</span>
+                                <span class="badge bg-secondary me-2">Google Cloud</span>
+                            </div>
+                            <a href="#" class="prop-c-btn"><i class="fas fa-external-link-alt me-2"></i>Ir a Verificación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion 3 -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="this.parentElement.classList.toggle('open')">
+                    <img src="assets/docs/png/logo-universitymichigan.png" class="acc-logo">
+                    <span class="acc-title">Web Applications for Everybody</span>
+                    <span class="acc-meta d-none d-md-inline">Mar 2022</span>
+                    <i class="fas fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="acc-body">
+                    <div class="acc-content-flex">
+                        <img src="assets/docs/png/cert-web-applications-p1.jpg" class="acc-img">
+                        <div>
+                            <h5>Acreditado por Universidad de Michigan</h5>
+                            <p class="text-muted">Desarrollo sólido del stack requerido para la creación de aplicaciones web estructuradas.</p>
+                            <a href="#" class="prop-c-btn"><i class="fas fa-external-link-alt me-2"></i>Ir a Verificación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <hr class="my-5" style="border-color: var(--primary-blue); opacity: 0.8; border-width: 2px;">
+
+        <!-- PROPUESTA G (Híbrido) -->
+        <h2 class="proposal-title" style="color: var(--primary-blue);">💎 Híbrido G: "Glass Asymmetric" (Mezcla A + D)</h2>
+        <p class="text-center text-muted mb-4">Mejorado para entornos oscuros, imágenes sin opacidad grisácea en reposo e logo situado matemáticamente en la punta del triángulo. También retoma el menú píldora adherido.</p>
+
+        <!-- Filtro Píldora agregado como solicitaste -->
+        <div class="text-center">
+            <div class="pill-filter">
+                <button class="pill-btn active">Todas Verificables</button>
+                <button class="pill-btn">Cursos</button>
+                <button class="pill-btn">Rutas Académicas</button>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Hybrid Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="prop-g-card">
+                    <div class="prop-g-img-container" style="background: linear-gradient(135deg, #0f172a, #1e293b);">
+                        <span class="prop-g-tag"><i class="fas fa-star text-warning"></i> Especialización</span>
+                        <a href="assets/docs/png/cert-data-science-p1.jpg" data-fancybox="gallery-g" data-caption="IBM Data Science Profesional">
+                            <img src="assets/docs/png/cert-data-science-p1.jpg" alt="Cert" class="prop-g-img">
+                        </a>
+                    </div>
+                    <div class="prop-g-body">
+                        <!-- Logo local PNG contenido y centrado -->
+                        <div class="prop-g-logo-wrapper">
+                            <img src="assets/docs/png/logo-ibm.png" alt="IBM">
+                        </div>
+                        <h3 class="prop-g-title">IBM Data Science Profesional</h3>
+                        <div class="prop-g-provider">Especialización Avanzada • IBM</div>
+                        <a href="#" class="prop-g-btn mb-2 mt-2 d-inline-block">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hybrid Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="prop-g-card">
+                    <div class="prop-g-img-container" style="background: linear-gradient(135deg, #0d47a1, #1976d2);">
+                        <span class="prop-g-tag">Curso GCP</span>
+                        <a href="assets/docs/png/cert-gcp-data-engineering-p1.jpg" data-fancybox="gallery-g" data-caption="GCP Big Data & Machine Learning">
+                            <img src="assets/docs/png/cert-gcp-data-engineering-p1.jpg" alt="Cert" class="prop-g-img">
+                        </a>
+                    </div>
+                    <div class="prop-g-body">
+                        <!-- Logo local PNG contenido y centrado -->
+                        <div class="prop-g-logo-wrapper">
+                            <img src="assets/docs/png/logo-googlecloud.png" alt="Google Cloud">
+                        </div>
+                        <h3 class="prop-g-title">GCP Big Data & Machine Learning</h3>
+                        <div class="prop-g-provider">Arquitectura en Nube • Google</div>
+                        <a href="#" class="prop-g-btn mb-2 mt-2 d-inline-block">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separador -->
+        <hr class="my-5" style="border-color: var(--primary-blue); opacity: 0.8; border-width: 2px;">
+
+        <!-- PROPUESTA H (Híbrido) -->
+        <h2 class="proposal-title" style="color: var(--primary-blue);">💎 Híbrido H: "Corporate Accordion Horizontal" (Mezcla C + F)</h2>
+        <p class="text-center text-muted mb-4">El acordeón ahora utiliza el Filtro Píldora. Además, cuando haces clic para expandirlo, verás una <strong>galería horizontal deslizable con varias tarjetas</strong> corporativas, ¡no solo una!</p>
+
+        <!-- Filtro Píldora agregado como solicitaste -->
+        <div class="text-center">
+            <div class="pill-filter">
+                <button class="pill-btn active">Ver Todo</button>
+                <button class="pill-btn">Especializaciones</button>
+                <button class="pill-btn">Micro-Credenciales</button>
+            </div>
+        </div>
+
+        <div class="accordion-wrapper">
+            <!-- Hybrid Accordion 1 (Multiple Items horizontally) -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="this.parentElement.classList.toggle('open')">
+                    <img src="assets/docs/png/logo-ibm.png" class="acc-logo" alt="IBM">
+                    <span class="acc-title">IBM Cloud & Data Path (Despliega para ver los cursos)</span>
+                    <span class="acc-meta d-none d-md-inline">Múltiples</span>
+                    <i class="fas fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="prop-h-body">
+                    <!-- Fila horizontal (Scrollable Gallery) de múltiples tarjetas C en el interior -->
+                    <div class="prop-h-gallery">
+
+                        <!-- Tarjeta Interna 1 -->
+                        <div class="prop-h-inner-card">
+                            <div class="prop-h-img-col">
+                                <img src="assets/docs/png/cert-data-science-p1.jpg" alt="Cert" class="prop-h-img">
+                            </div>
+                            <div class="prop-h-content">
+                                <h3 class="prop-c-title" style="font-size: 1rem;">IBM Data Science Specialization</h3>
+                                <div class="prop-c-subtitle mb-2 d-flex align-items-center gap-1">
+                                    <div style="width:20px; height:20px; display:flex; align-items:center; justify-content:center; background:white; border-radius:4px; padding:2px; border:1px solid var(--border-color);">
+                                        <img src="assets/docs/png/logo-ibm.png" style="max-width:100%; max-height:100%; object-fit:contain;" alt="IBM">
+                                    </div>
+                                    <span style="font-size: 0.8rem;">IBM Corporation</span>
+                                </div>
+                                <a href="#" class="prop-c-btn bg-primary text-white" style="font-size: 0.8rem; padding: 4px 10px;"><i class="fas fa-external-link-alt me-2"></i>Ver Credencial</a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta Interna 2 -->
+                        <div class="prop-h-inner-card">
+                            <div class="prop-h-img-col">
+                                <img src="assets/docs/png/cert-data-science-p1.jpg" alt="Cert" class="prop-h-img" style="filter: hue-rotate(90deg);">
+                            </div>
+                            <div class="prop-h-content">
+                                <h3 class="prop-c-title" style="font-size: 1rem;">IBM Machine Learning Specialist</h3>
+                                <div class="prop-c-subtitle mb-2 d-flex align-items-center gap-1">
+                                    <div style="width:20px; height:20px; display:flex; align-items:center; justify-content:center; background:white; border-radius:4px; padding:2px; border:1px solid var(--border-color);">
+                                        <img src="assets/docs/png/logo-ibm.png" style="max-width:100%; max-height:100%; object-fit:contain;" alt="IBM">
+                                    </div>
+                                    <span style="font-size: 0.8rem;">IBM Corporation</span>
+                                </div>
+                                <a href="#" class="prop-c-btn bg-primary text-white" style="font-size: 0.8rem; padding: 4px 10px;"><i class="fas fa-external-link-alt me-2"></i>Ver Credencial</a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta Interna 3 -->
+                        <div class="prop-h-inner-card">
+                            <div class="prop-h-img-col">
+                                <img src="assets/docs/png/cert-data-science-p1.jpg" alt="Cert" class="prop-h-img" style="filter: hue-rotate(180deg);">
+                            </div>
+                            <div class="prop-h-content">
+                                <h3 class="prop-c-title" style="font-size: 1rem;">IBM Python for AI Applications</h3>
+                                <div class="prop-c-subtitle mb-2 d-flex align-items-center gap-1">
+                                    <div style="width:20px; height:20px; display:flex; align-items:center; justify-content:center; background:white; border-radius:4px; padding:2px; border:1px solid var(--border-color);">
+                                        <img src="assets/docs/png/logo-ibm.png" style="max-width:100%; max-height:100%; object-fit:contain;" alt="IBM">
+                                    </div>
+                                    <span style="font-size: 0.8rem;">IBM Corporation</span>
+                                </div>
+                                <a href="#" class="prop-c-btn bg-primary text-white" style="font-size: 0.8rem; padding: 4px 10px;"><i class="fas fa-external-link-alt me-2"></i>Ver Credencial</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hybrid Accordion 2 -->
+            <div class="acc-item">
+                <button class="acc-header" onclick="this.parentElement.classList.toggle('open')">
+                    <img src="assets/docs/png/logo-googlecloud.png" class="acc-logo" alt="GCP">
+                    <span class="acc-title">Google Cloud Database & Architecture</span>
+                    <span class="acc-meta d-none d-md-inline">Ene 2024</span>
+                    <i class="fas fa-chevron-down acc-icon"></i>
+                </button>
+                <div class="prop-h-body">
+                    <div class="prop-h-gallery">
+                        <div class="prop-h-inner-card">
+                            <div class="prop-h-img-col">
+                                <img src="assets/docs/png/cert-gcp-database-engineer-p1.jpg" alt="Cert" class="prop-h-img">
+                            </div>
+                            <div class="prop-h-content">
+                                <h3 class="prop-c-title">Google Cloud Data Professional</h3>
+                                <div class="prop-c-subtitle d-flex align-items-center gap-1">
+                                    <div style="width:20px; height:20px; display:flex; align-items:center; justify-content:center; background:white; border-radius:4px; padding:2px; border:1px solid var(--border-color);">
+                                        <img src="assets/docs/png/logo-googlecloud.png" style="max-width:100%; max-height:100%; object-fit:contain;" alt="Google Cloud">
+                                    </div>
+                                    <span class="fw-medium">Google Cloud</span>
+                                </div>
+                                <div class="prop-c-meta">
+                                    Diseño, migración e instrumentación de BB.DD.
+                                </div>
+                                <a href="#" class="prop-c-btn bg-primary text-white"><i class="fas fa-external-link-alt me-2"></i>Validación</a>
+                            </div>
+                        </div>
+
+                        <div class="prop-h-inner-card">
+                            <div class="prop-h-img-col">
+                                <img src="assets/docs/png/cert-gcp-data-engineering-p1.jpg" alt="Cert" class="prop-h-img">
+                            </div>
+                            <div class="prop-h-content">
+                                <h3 class="prop-c-title">GCP Big Data Architecture</h3>
+                                <div class="prop-c-subtitle d-flex align-items-center gap-1">
+                                    <div style="width:20px; height:20px; display:flex; align-items:center; justify-content:center; background:white; border-radius:4px; padding:2px; border:1px solid var(--border-color);">
+                                        <img src="assets/docs/png/logo-googlecloud.png" style="max-width:100%; max-height:100%; object-fit:contain;" alt="Google Cloud">
+                                    </div>
+                                    <span class="fw-medium">Google Cloud</span>
+                                </div>
+                                <div class="prop-c-meta">
+                                    Construcción de data-lakes serverless.
+                                </div>
+                                <a href="#" class="prop-c-btn bg-primary text-white"><i class="fas fa-external-link-alt me-2"></i>Validación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="wrap site-footer"><p>© <span id="footerYear">2026</span> Jhulen Mallo</p><span class="mono">LA PAZ, BOLIVIA</span><a href="index.html#home">Volver al inicio ↑</a></footer>
+    <script src="assets/js/site.js?v=d53e4f972889" defer></script>
+
+    <!-- Galería de imágenes -->
+    <!-- JS de Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        // Init Fancybox
+        if (window.Fancybox) Fancybox.bind("[data-fancybox]", {
+            // Opciones personalizadas
+        });
+
+    </script>
+</body>
+</html>

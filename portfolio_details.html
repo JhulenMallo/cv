@@ -1,286 +1,102 @@
 <!DOCTYPE html>
+<!-- Copyright (c) 2025 Jhulen Mallo. Todos los derechos reservados. -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles del Certificado</title>
-    <meta name="description" content="Detalles del certificado profesional de Jhulen Mallo.">
-    <link rel="icon" type="image/png" href="assets/img/bar-chart.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/portafolio-details.css">
-    <!-- Carga de la Data Dinámica -->
-    <script src="assets/js/certificates-data_v2.js"></script>
-    
-    <!-- Evitar parpadeo (FOUC) aplicando el tema inmediatamente -->
-    <script>
-        (function() {
-            var savedTheme = localStorage.getItem('portfolio-theme');
-            if (savedTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        })();
-    </script>
+    <meta name="theme-color" content="#101720">
+    <meta name="description" content="Formación y credenciales verificables de Jhulen Mallo en datos, cloud e inteligencia artificial.">
+    <title>Credencial · Jhulen Mallo</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css?v=2093d21c2bae">
+    <link rel="stylesheet" href="assets/css/portafolio-details.css?v=9c718e050b57">
+    <link rel="stylesheet" href="assets/css/credentials.css?v=6dbae58da17d">
+    <script src="assets/js/theme-init.js?v=c1a056a810c9"></script>
 </head>
-<body>
-    <!-- Header Section -->
-    <section class="cert-header">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <a href="index.html" class="back-btn mb-0">
-                    <i class="fas fa-arrow-left"></i>
-                    Volver al Portafolio
-                </a>
-                <button id="themeToggle" class="theme-toggle-btn text-white" aria-label="Toggle Theme">
-                    <i class="fas fa-sun" id="themeIcon"></i>
-                </button>
+<body class="certificate-page">
+    <svg aria-hidden="true" class="icon-defs" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+        <symbol id="icon-external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+        <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+        <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></symbol>
+        <symbol id="icon-print" viewBox="0 0 24 24"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7z"/></symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    </svg>
+    <a href="#main" class="skip-link">Saltar al contenido</a>
+    <header class="site-header">
+        <nav class="wrap nav-shell" aria-label="Navegación principal">
+            <a class="wordmark" href="index.html#home" aria-label="Jhulen Mallo, inicio">jm<span>.</span><span class="wordmark-label"> / datos & código</span></a>
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-button" type="button" aria-label="Activar tema claro" aria-pressed="false"><svg aria-hidden="true" class="icon theme-sun"><use href="#icon-sun"/></svg><svg aria-hidden="true" class="icon theme-moon"><use href="#icon-moon"/></svg></button>
+                <button id="menuToggle" class="icon-button menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarNav"><svg aria-hidden="true" class="icon"><use href="#icon-menu"/></svg></button>
             </div>
-            
-            <div class="row align-items-center">
-                <div class="col-lg-8">
-                    <h1 class="cert-title" id="page-title">Cargando...</h1>
-                    <p class="cert-provider" id="page-provider">
-                        <i class="fas fa-university me-2"></i>
-                        <span>Cargando...</span>
-                    </p>
-                    <p class="cert-description" id="page-desc">...</p>
-                    <div class="cert-meta">
-                        <div class="meta-item">
-                            <i class="fas fa-calendar me-1"></i>
-                            <span id="page-date">...</span>
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-book me-1"></i>
-                            <span id="page-courses-count">...</span>
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-certificate me-1"></i>
-                            Verificado
-                        </div>
+            <div id="navbarNav" class="nav-links">
+                <a href="index.html#about">Perfil</a>
+                <a href="index.html#skills">Competencias</a>
+                <a href="index.html#work">Proyectos</a>
+                <a href="index.html#experience">Experiencia</a>
+                <a href="index.html#certifications">Credenciales</a>
+                <a href="index.html#contact" class="nav-contact">Conversemos <svg aria-hidden="true" class="icon"><use href="#icon-external"/></svg></a>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="certificateContent">
+            <section class="cert-intro wrap" aria-labelledby="page-title">
+                <a href="index.html#certifications" class="text-link cert-back"><svg class="icon icon-back" aria-hidden="true"><use href="#icon-arrow"/></svg>Todas las credenciales</a>
+                <div class="cert-hero-grid">
+                    <div class="cert-hero-copy">
+                        <p class="eyebrow" id="page-type">FORMACIÓN CONTINUA / CREDENCIAL</p>
+                        <h1 id="page-title">Cargando credencial…</h1>
+                        <p id="page-provider" class="cert-provider"><span>Jhulen Mallo</span></p>
+                        <p id="page-desc" class="cert-description"></p>
+                        <dl class="cert-meta">
+                            <div id="issued-meta"><dt>EMISIÓN</dt><dd id="page-date">—</dd></div>
+                            <div><dt>FORMATO</dt><dd id="page-courses-count">—</dd></div>
+                            <div id="expiry-meta" hidden><dt>VENCIMIENTO</dt><dd id="page-expiry">—</dd></div>
+                        </dl>
+                        <a id="page-hero-verify" class="button button-primary" target="_blank" rel="noopener noreferrer" hidden>Verificar credencial<svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a>
                     </div>
+                    <figure class="cert-document">
+                        <button type="button" class="cert-image-button" id="mainImageButton" aria-label="Ampliar certificado" disabled><img id="page-main-img" alt=""></button>
+                        <figcaption><svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg><span id="previewCaption">Ampliar documento</span></figcaption>
+                    </figure>
                 </div>
-                <div class="col-lg-4 text-center mt-3">
-                    <img id="page-main-img" src="" alt="Certificate" class="cert-main-image clickable-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Overview Section -->
-    <div class="container">
-        <div class="content-section">
-            <h2 class="section-header">
-                <i class="fas fa-info-circle me-2"></i>
-                Resumen
-            </h2>
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-7">
-                        <p id="page-overview-1">...</p>
-                        <p class="mb-0" id="page-overview-2">...</p>
-                    </div>
-                    <div class="col-md-5">
-                        <h6 class="fw-bold mb-3">Habilidades Clave:</h6>
-                        <div class="skills-gained" id="page-skills">
-                            <!-- Skills rendered here -->
-                        </div>
-                    </div>
+            </section>
+            <div class="section-tint" id="credential-information">
+                <div class="wrap cert-body">
+                    <section class="cert-section" id="overview-section" aria-labelledby="overview-title">
+                        <div class="cert-section-heading"><p class="eyebrow">01 / CONTEXTO</p><h2 id="overview-title">Sobre esta formación.</h2></div>
+                        <div class="cert-overview-grid"><div class="cert-overview-copy"><p id="page-overview-1"></p><p id="page-overview-2"></p></div><aside class="cert-skills"><h3>Competencias que complementan mi perfil</h3><ul id="page-skills" class="tag-list" aria-label="Competencias de la credencial"></ul></aside></div>
+                    </section>
+                    <section class="cert-section" id="modules-section-container" aria-labelledby="modules-title" hidden>
+                        <div class="cert-section-heading"><p class="eyebrow">02 / CONTENIDOS</p><h2 id="modules-title">Cursos y módulos.</h2></div>
+                        <div class="modules-grid" id="page-modules"></div>
+                    </section>
+                    <section class="cert-section" id="projects-section-container" aria-labelledby="projects-title" hidden>
+                        <div class="cert-section-heading"><p class="eyebrow">APLICACIÓN / PRÁCTICA</p><h2 id="projects-title">Proyectos y casos prácticos.</h2></div>
+                        <div class="applications-grid" id="page-projects"></div>
+                    </section>
                 </div>
             </div>
+            <section class="wrap cert-verification" aria-labelledby="verification-title"><div><p class="eyebrow">FUENTE / CREDENCIAL</p><h2 id="verification-title">Una formación que puedes consultar.</h2><p id="page-verify-text"></p></div><a id="page-verify-link" class="button button-primary" target="_blank" rel="noopener noreferrer" hidden>Verificar credencial<svg class="icon" aria-hidden="true"><use href="#icon-external"/></svg></a></section>
         </div>
-
-        <!-- Courses/Modules Section -->
-        <div class="content-section">
-            <h2 class="section-header">
-                <i class="fas fa-graduation-cap me-2"></i>
-                Cursos/Módulos de la Especialización
-            </h2>
-            <div class="section-content">
-                <div class="modules-grid" id="page-modules">
-                    <!-- Modules rendered here -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="content-section" id="projects-section-container">
-            <h2 class="section-header">
-                <i class="fas fa-code me-2"></i>
-                Proyectos / Casos Prácticos
-            </h2>
-            <div class="section-content">
-                <div class="row" id="page-projects">
-                    <!-- Projects rendered here -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Verification Section -->
-        <div class="content-section verification-section">
-            <h2 class="section-header">
-                <i class="fas fa-shield-check me-2"></i>
-                Verificación Oficial
-            </h2>
-            <div class="section-content">
-                <p class="mb-4">Certificado verificable y oficial:</p>
-                <div class="verification-links">
-                    <a id="page-verify-link" href="#" class="verify-btn" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-external-link-alt"></i>
-                        Ver Credencial
-                    </a>
-                </div>
-                <p class="mt-3 mb-0 small text-muted" id="page-verify-text">...</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-2">&copy; 2026 Jhulen Mallo</p>
-            <p class="mb-0">
-                <a href="index.html" class="text-white">
-                    <i class="fas fa-arrow-left me-2"></i>
-                    Volver al Portafolio Principal
-                </a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Image Lightbox -->
-    <div class="image-lightbox" id="imageLightbox">
-        <div class="lightbox-content">
-            <button class="lightbox-close" id="lightboxClose">&times;</button>
-            <img class="lightbox-image" id="lightboxImage" src="" alt="">
-            <div class="lightbox-caption" id="lightboxCaption"></div>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/portafolio-details.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // ── Theme Toggle ──────────────────────────────────────────
-            const themeToggle = document.getElementById('themeToggle');
-            const themeIcon = document.getElementById('themeIcon');
-
-            const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
-            if (savedTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                if (themeIcon) {
-                    themeIcon.classList.remove('fa-sun');
-                    themeIcon.classList.add('fa-moon');
-                }
-            }
-
-            if (themeToggle) {
-                themeToggle.addEventListener('click', () => {
-                    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-                    if (isLight) {
-                        document.documentElement.removeAttribute('data-theme');
-                        themeIcon.classList.replace('fa-moon', 'fa-sun');
-                        localStorage.setItem('portfolio-theme', 'dark');
-                    } else {
-                        document.documentElement.setAttribute('data-theme', 'light');
-                        themeIcon.classList.replace('fa-sun', 'fa-moon');
-                        localStorage.setItem('portfolio-theme', 'light');
-                    }
-                });
-            }
-
-            // ── Carga dinámica del certificado ────────────────────────
-            const urlParams = new URLSearchParams(window.location.search);
-            const certId = urlParams.get('id');
-            const data = window.certData ? window.certData[certId] : null;
-
-            if (data) {
-                document.title = data.title + ' - Detalles';
-                document.querySelector('meta[name="description"]').setAttribute('content',
-                    data.title + ' - ' + data.description);
-
-                document.getElementById('page-title').textContent = data.title;
-                document.querySelector('#page-provider span').textContent = data.provider;
-                document.getElementById('page-desc').textContent = data.description;
-                document.getElementById('page-date').textContent = data.date;
-                document.getElementById('page-courses-count').textContent = data.coursesCount;
-
-                const mainImg = document.getElementById('page-main-img');
-                mainImg.src = data.mainImage;
-                mainImg.setAttribute('data-caption', data.title);
-
-                document.getElementById('page-overview-1').textContent = data.overviewText1;
-                document.getElementById('page-overview-2').textContent = data.overviewText2;
-
-                // Skills — DOM seguro con createElement
-                const skillsContainer = document.getElementById('page-skills');
-                data.skills.forEach(skill => {
-                    const el = document.createElement('span');
-                    el.className = 'skill-tag';
-                    el.textContent = skill;
-                    skillsContainer.appendChild(el);
-                });
-
-                // Módulos — construir HTML en array y volcar una sola vez
-                const modulesContainer = document.getElementById('page-modules');
-                const modulesHTML = data.modules.map(mod => `
-                    <div class="module-card">
-                        <img src="${mod.img}" class="module-image clickable-img" loading="lazy" data-caption="${mod.title}" alt="${mod.title}" onerror="this.onerror=null;this.src='assets/docs/png/placeholder-cert.svg'">
-                        <div class="module-info">
-                            <h4 class="module-title">${mod.title}</h4>
-                            <p class="module-description">${mod.desc}</p>
-                            <div class="module-duration"><i class="fas fa-clock"></i> ${mod.duration}</div>
-                        </div>
-                    </div>`).join('');
-                modulesContainer.innerHTML = modulesHTML;
-
-                // Proyectos — mismo patrón
-                const projectsContainer = document.getElementById('page-projects');
-                if (data.projects && data.projects.length > 0) {
-                    const projectsHTML = data.projects.map(proj => {
-                        const badgesHTML = proj.badges.map(b =>
-                            `<span class="badge bg-${proj.color} me-1">${b}</span>`).join('');
-                        return `
-                            <div class="col-md-6 mb-3">
-                                <div class="card h-100 shadow-sm" style="background: var(--light-gray); border: 1px solid var(--border-color);">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-${proj.color} fw-bold">
-                                            <i class="${proj.icon} me-2"></i>${proj.title}
-                                        </h5>
-                                        <p class="card-text" style="color: var(--text-light);">${proj.desc}</p>
-                                        <div class="mt-3">${badgesHTML}</div>
-                                    </div>
-                                </div>
-                            </div>`;
-                    }).join('');
-                    projectsContainer.innerHTML = projectsHTML;
-                } else {
-                    document.getElementById('projects-section-container').style.display = 'none';
-                }
-
-                document.getElementById('page-verify-link').href = data.verifyLink;
-                document.getElementById('page-verify-text').textContent = data.verifyText;
-            } else {
-                document.querySelector('.cert-header .container').innerHTML = `
-                    <div class="text-center py-5">
-                        <div class="mb-4">
-                            <i class="fas fa-search fa-4x" style="color: var(--border-color);"></i>
-                        </div>
-                        <h1 class="display-4 fw-bold mb-3" style="color: var(--text-dark);">¡Vaya! 404</h1>
-                        <p class="lead mb-4" style="color: var(--text-light);">No hemos podido encontrar el certificado que buscas o el enlace está dañado.</p>
-                        <a href="index.html#certifications" class="btn btn-primary px-4 py-2 mt-3" style="border-radius: 8px;">
-                            <i class="fas fa-arrow-left me-2"></i>Volver a Certificaciones
-                        </a>
-                    </div>
-                `;
-                document.querySelectorAll('.content-section').forEach(el => el.style.display = 'none');
-            }
-
-            // Re-vincular lightbox a imágenes inyectadas dinámicamente
-            document.dispatchEvent(new Event('content-loaded'));
-        });
-    </script>
+        <section id="certNotFound" class="wrap cert-empty" aria-labelledby="missing-title" hidden><p class="eyebrow">CREDENCIAL NO ENCONTRADA</p><h1 id="missing-title">No encontré esa credencial.</h1><p>Consulta el catálogo para explorar mis certificados, cursos y especializaciones.</p><a href="index.html#certifications" class="button button-primary">Volver a credenciales<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></section>
+        <noscript><p class="wrap cert-noscript">Activa JavaScript para cargar la ficha. También puedes <a href="index.html#certifications">volver a las credenciales</a>.</p></noscript>
+    </main>
+    <footer class="wrap site-footer"><p>© <span id="footerYear">2026</span> Jhulen Mallo</p><span class="mono">LA PAZ, BOLIVIA</span><a href="index.html#home">Volver al inicio ↑</a></footer>
+    <dialog class="image-lightbox" id="imageLightbox" aria-labelledby="lightboxCaption"><div class="lightbox-content"><button type="button" class="icon-button lightbox-close" id="lightboxClose" aria-label="Cerrar imagen ampliada">×</button><img class="lightbox-image" id="lightboxImage" alt=""><p class="lightbox-caption" id="lightboxCaption"></p></div></dialog>
+    <script src="assets/js/site.js?v=d53e4f972889" defer></script>
+    <script src="assets/js/certificates-data_v2.js?v=66b891a75168" defer></script>
+    <script src="assets/js/credlyBadges.js?v=f3db1dde9c47" defer></script>
+    <script src="assets/js/credentials-catalog.js?v=109d9d42ddea" defer></script>
+    <script src="assets/js/credentials-ui.js?v=1164d171b8c6" defer></script>
+    <script src="assets/js/portafolio-details.js?v=e076e2ad4ffc" defer></script>
 </body>
 </html>

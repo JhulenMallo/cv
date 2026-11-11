@@ -1,11 +1,38 @@
 const certData = {
 
+    // Verificado en LinkedIn y Credly el 11 de noviembre de 2026.
+    'generative-ai-leader': {
+        title: 'Generative AI Leader Certification (Spanish)',
+        provider: 'Google Cloud',
+        type: 'certification',
+        description: 'Certificación oficial de Google Cloud sobre fundamentos de IA Generativa, aplicaciones de negocio y adopción responsable en las organizaciones.',
+        date: '2 de noviembre de 2026',
+        issuedOn: '2026-11-02',
+        expiresOn: '2029-11-02',
+        credentialId: 'b6606c6e30c845cd894ddfa10d5730ca',
+        serialNumber: '84875',
+        coursesCount: 'Certificación oficial',
+        mainImage: 'assets/docs/png/cert-generative-ai-leader-p1.jpg',
+        overviewText1: 'Acredita conocimientos sobre el uso de IA Generativa para resolver necesidades de negocio y sobre las soluciones de Google Cloud para su adopción.',
+        overviewText2: 'Incluye fundamentos de IA, ética y contexto empresarial. Credencial emitida a Jhulen Mallo el 2 de noviembre de 2026, con vencimiento el 2 de noviembre de 2029.',
+        skills: ['Generative AI', 'Google Cloud Platform (GCP)', 'AI Ethics', 'Business Analysis', 'Cloud Computing', 'Artificial Intelligence Applications'],
+        modules: [],
+        projects: [],
+        verifyLink: 'https://www.credly.com/badges/6cf3e9ab-4273-437c-b1a1-de7fd75c58f8',
+        verifyText: 'Emitida a Jhulen Mallo el 2 de noviembre de 2026. Válida hasta el 2 de noviembre de 2029. Número de serie: 84875. Verificable en Credly.'
+    },
+
     // ── Febrero 2026 ────────────────────────────────────────────────────────
     'associate-cloud-engineer': {
         title: 'Associate Cloud Engineer',
         provider: 'Google Cloud',
+        type: 'certification',
         description: 'Certificación oficial de Google Cloud que valida las habilidades para desplegar aplicaciones, monitorear operaciones y gestionar soluciones empresariales en Google Cloud Platform.',
-        date: 'Febrero 2026',
+        date: '1 de febrero de 2026',
+        issuedOn: '2026-02-01',
+        expiresOn: '2029-02-01',
+        credentialId: 'a63f2eeb8c1e4d0bb3a8982dc9f460d1',
+        serialNumber: '190563',
         coursesCount: 'Certificación Oficial',
         mainImage: 'assets/docs/png/cert-associate-cloud-engineer-p1.jpg',
         overviewText1: 'La certificación Associate Cloud Engineer de Google Cloud valida la capacidad para desplegar y asegurar aplicaciones, monitorear operaciones en producción y gestionar recursos de cómputo, almacenamiento, redes e identidad en GCP.',
@@ -17,12 +44,13 @@ const certData = {
         ],
         directLink: 'https://www.credly.com/badges/adc543d1-0d0a-42cf-9b76-f09412427cd1',
         verifyLink: 'https://www.credly.com/badges/adc543d1-0d0a-42cf-9b76-f09412427cd1',
-        verifyText: 'Certificación válida hasta el 1 de Febrero de 2029. Verificable en Credly.'
+        verifyText: 'Emitida a Jhulen Mallo el 1 de febrero de 2026. Válida hasta el 1 de febrero de 2029. Número de serie: 190563. Verificable en Credly.'
     },
 
     'gcp-cloud-computing-foundations': {
         title: 'Google Cloud Computing Foundations',
         provider: 'Google Cloud',
+        type: 'certification',
         description: 'Certificado de Google Cloud que valida los conocimientos fundacionales en computación en la nube, infraestructura de Google Cloud, redes, seguridad y servicios de datos y machine learning en GCP.',
         date: '2023',
         coursesCount: 'Certificación',
@@ -42,6 +70,7 @@ const certData = {
     'gcp-cloud-engineer-cert': {
         title: 'Preparing for Google Cloud Certification: Cloud Engineer',
         provider: 'Google Cloud - Coursera',
+        type: 'specialization',
         description: 'Especialización de preparación para la certificación Associate Cloud Engineer de Google Cloud, cubriendo infraestructura esencial, servicios core, escalado automático y las habilidades clave del rol de Cloud Engineer.',
         date: 'Noviembre 2023',
         coursesCount: '5 Cursos',
@@ -67,6 +96,7 @@ const certData = {
     'gcp-architecting-compute-engine': {
         title: 'Architecting with Google Compute Engine',
         provider: 'Google Cloud - Coursera',
+        type: 'specialization',
         description: 'Especialización en arquitectura de infraestructura con Google Compute Engine, cubriendo desde fundamentos de GCP hasta diseño de sistemas elásticos, escalables, seguros y confiables en la nube.',
         date: 'Noviembre 2023',
         coursesCount: '5 Cursos',
@@ -92,6 +122,7 @@ const certData = {
     'powerbi-data-analyst': {
         title: 'Microsoft Power BI Data Analyst',
         provider: 'Microsoft - Coursera',
+        type: 'specialization',
         description: 'Especialización profesional en análisis de datos con Power BI, cubriendo desde la preparación de datos en Excel hasta la creación de dashboards, modelado con Star Schema, cálculos en DAX y preparación para la certificación Microsoft PL-300.',
         date: 'Diciembre 2023',
         coursesCount: '8 Cursos',
@@ -121,6 +152,7 @@ const certData = {
     'deep-learning': {
         title: 'Deep Learning',
         provider: 'DeepLearning.AI - Coursera',
+        type: 'specialization',
         description: 'Especialización insignia de DeepLearning.AI en redes neuronales profundas, cubriendo desde fundamentos hasta arquitecturas avanzadas como CNNs, RNNs, LSTMs y Transformers, con aplicaciones reales en visión por computadora y NLP.',
         date: 'Octubre 2023',
         coursesCount: '5 Cursos',
@@ -146,6 +178,7 @@ const certData = {
     'gcp-cloud-data-engineer-cert': {
         title: 'Preparing for Google Cloud Certification: Cloud Data Engineer',
         provider: 'Google Cloud - Coursera',
+        type: 'specialization',
         description: 'Especialización de preparación para la certificación Professional Data Engineer de Google Cloud, cubriendo Big Data, pipelines batch y streaming, análisis con BigQuery, y migración de workloads Hadoop/Spark a GCP.',
         date: 'Octubre 2023',
         coursesCount: '5 Cursos',
@@ -171,6 +204,7 @@ const certData = {
     'aws-practical-data-science': {
         title: 'Practical Data Science on the AWS Cloud',
         provider: 'Amazon Web Services & DeepLearning.AI - Coursera',
+        type: 'specialization',
         description: 'Especialización en ciencia de datos práctica sobre AWS, cubriendo preparación de datos, detección de sesgos, feature engineering, entrenamiento con AutoML, despliegue de pipelines end-to-end y pipelines de etiquetado con human-in-the-loop.',
         date: 'Octubre 2023',
         coursesCount: '3 Cursos',
@@ -192,9 +226,30 @@ const certData = {
     },
 
     // ── Septiembre 2023 ─────────────────────────────────────────────────────
+    // Verificado en LinkedIn y en el certificado de Coursera el 11 de noviembre de 2026.
+    'generative-ai-llms': {
+        title: 'Generative AI with Large Language Models',
+        provider: 'DeepLearning.AI & Amazon Web Services (AWS) - Coursera',
+        type: 'course',
+        description: 'Curso de DeepLearning.AI y AWS sobre modelos de lenguaje, entrenamiento, evaluación, ajuste y despliegue de soluciones de IA Generativa.',
+        date: 'Septiembre 2023',
+        issuedOn: '2023-09-27',
+        credentialId: '9RVETDFCQ98N',
+        coursesCount: '1 curso · 16 horas aprox.',
+        mainImage: 'assets/docs/png/cert-generative-ai-llms.jpg',
+        overviewText1: 'Formación sobre el funcionamiento de los modelos de lenguaje y su aplicación a necesidades empresariales, impartida por DeepLearning.AI y Amazon Web Services a través de Coursera.',
+        overviewText2: 'El certificado confirma la finalización del curso por Jhulen Mauricio Mallo Quispe el 27 de septiembre de 2023. Aborda entrenamiento, fine-tuning, evaluación, optimización y despliegue de modelos.',
+        skills: ['Large Language Modeling', 'Generative AI', 'Model Training', 'Fine-tuning', 'Model Evaluation', 'Model Deployment', 'Model Optimization', 'Python Programming'],
+        modules: [],
+        projects: [],
+        verifyLink: 'https://www.coursera.org/account/accomplishments/verify/9RVETDFCQ98N',
+        verifyText: 'Completado por Jhulen Mauricio Mallo Quispe el 27 de septiembre de 2023. Credencial 9RVETDFCQ98N, verificable en Coursera.'
+    },
+
     'data-analysis-visualization-foundations': {
         title: 'Data Analysis and Visualization Foundations',
         provider: 'IBM - Coursera',
+        type: 'specialization',
         description: 'Especialización de IBM en fundamentos de análisis y visualización de datos, cubriendo el ecosistema de datos, análisis con Excel, minería de datos y creación de dashboards interactivos con Cognos Analytics.',
         date: 'Septiembre 2023',
         coursesCount: '4 Cursos',
@@ -219,6 +274,7 @@ const certData = {
     'ds-fundamentals-python-sql': {
         title: 'Data Science Fundamentals with Python and SQL',
         provider: 'IBM - Coursera',
+        type: 'specialization',
         description: 'Especialización de IBM en fundamentos de ciencia de datos con Python y SQL, cubriendo herramientas del ecosistema, programación en Python, análisis estadístico, visualización y bases de datos relacionales.',
         date: 'Septiembre 2023',
         coursesCount: '5 Cursos',
@@ -244,6 +300,7 @@ const certData = {
     'gcp-database-engineer': {
         title: 'Google Cloud Database Engineer',
         provider: 'Google Cloud - Coursera',
+        type: 'specialization',
         description: 'Especialización en ingeniería de bases de datos en la nube que cubre la planificación, ejecución, prueba y monitoreo de migraciones empresariales, así como la gestión de Cloud SQL, Cloud Spanner y Bigtable en Google Cloud.',
         date: 'Septiembre 2023',
         coursesCount: '13 Cursos',
@@ -277,6 +334,7 @@ const certData = {
     'nlp': {
         title: 'Natural Language Processing',
         provider: 'DeepLearning.AI - Coursera',
+        type: 'specialization',
         description: 'Especialización en Procesamiento de Lenguaje Natural (NLP) que cubre desde regresión logística y vectores de palabras hasta modelos de atención y transformers para traducción, resumen y respuesta a preguntas.',
         date: 'Septiembre 2023',
         coursesCount: '4 Cursos',
@@ -301,6 +359,7 @@ const certData = {
     'mlops': {
         title: 'MLOps | Machine Learning Operations',
         provider: 'Duke University - Coursera',
+        type: 'specialization',
         description: 'Especialización en operaciones de aprendizaje automático (MLOps) que combina DevOps, DataOps y prácticas de ingeniería de software para implementar, automatizar y escalar modelos de Machine Learning en entornos de producción.',
         date: 'Septiembre 2023',
         coursesCount: '4 Cursos',
@@ -325,6 +384,7 @@ const certData = {
     'gcp-data-engineering': {
         title: 'Data Engineering, Big Data, and Machine Learning on GCP',
         provider: 'Google Cloud - Coursera',
+        type: 'specialization',
         description: 'Especialización en ingeniería de datos y Big Data sobre Google Cloud Platform, cubriendo desde la construcción de data lakes y warehouses hasta pipelines de streaming y Machine Learning aplicado.',
         date: 'Septiembre 2023',
         coursesCount: '4 Cursos',
@@ -349,6 +409,7 @@ const certData = {
     'gans': {
         title: 'Generative Adversarial Networks (GANs)',
         provider: 'DeepLearning.AI - Coursera',
+        type: 'specialization',
         description: 'Especialización en Redes Generativas Antagónicas (GANs), cubriendo desde la construcción de GANs básicas con PyTorch hasta técnicas avanzadas como StyleGAN, Pix2Pix y CycleGAN para traducción de imágenes y preservación de privacidad.',
         date: 'Septiembre 2023',
         coursesCount: '3 Cursos',
@@ -372,6 +433,7 @@ const certData = {
     'mathematics-engineers': {
         title: 'Mathematics for Engineers',
         provider: 'The Hong Kong University of Science and Technology - Coursera',
+        type: 'specialization',
         description: 'Especialización en matemáticas aplicadas a la ingeniería, cubriendo álgebra matricial, ecuaciones diferenciales, cálculo vectorial, métodos numéricos y programación científica en MATLAB.',
         date: 'Septiembre 2023',
         coursesCount: '5 Cursos',
@@ -397,6 +459,7 @@ const certData = {
     'aws-fundamentals': {
         title: 'AWS Fundamentals',
         provider: 'Amazon Web Services - Coursera',
+        type: 'specialization',
         description: 'Especialización en fundamentos de AWS que cubre los servicios esenciales de la nube, migración de infraestructura y diseño de arquitecturas de soluciones escalables y seguras en Amazon Web Services.',
         date: 'Septiembre 2023',
         coursesCount: '3 Cursos',
@@ -420,6 +483,7 @@ const certData = {
     'applied-data-science': {
         title: 'Applied Data Science',
         provider: 'IBM - Coursera',
+        type: 'specialization',
         description: 'Especialización en Ciencia de Datos Aplicada de IBM, cubriendo fundamentos de Python, análisis y visualización de datos, y un proyecto capstone que demuestra el dominio de técnicas y herramientas de data science.',
         date: 'Septiembre 2023',
         coursesCount: '5 Cursos',
@@ -445,6 +509,7 @@ const certData = {
     'intro-data-science': {
         title: 'Introduction to Data Science',
         provider: 'IBM - Coursera',
+        type: 'specialization',
         description: 'Especialización introductoria en Ciencia de Datos de IBM, cubriendo fundamentos de data science, herramientas del ecosistema, metodología de proyectos y consulta de bases de datos con SQL y Python.',
         date: 'Septiembre 2023',
         coursesCount: '4 Cursos',
@@ -470,6 +535,7 @@ const certData = {
     'math-ml': {
         title: 'Mathematics for Machine Learning and Data Science',
         provider: 'DeepLearning.AI - Coursera',
+        type: 'specialization',
         description: 'Especialización en matemáticas aplicadas a Machine Learning y Data Science, cubriendo álgebra lineal, cálculo optimizado y probabilidad/estadística para comprender en profundidad los algoritmos de ML.',
         date: 'Octubre 2023',
         coursesCount: '3 Cursos',
@@ -494,6 +560,7 @@ const certData = {
     'tensorflow': {
         title: 'DeepLearning.AI TensorFlow Developer',
         provider: 'DeepLearning.AI - Coursera',
+        type: 'specialization',
         description: 'Especialización en desarrollo con TensorFlow para deep learning y machine learning, cubriendo redes neuronales para visión por computadora, NLP y predicción de series temporales con RNNs, GRUs y LSTMs.',
         date: 'Noviembre 2023',
         coursesCount: '4 Cursos',
@@ -519,6 +586,7 @@ const certData = {
     'data-science': {
         title: 'IBM Data Science',
         provider: 'IBM - Coursera',
+        type: 'certification',
         description: 'Certificado profesional de IBM en ciencia de datos que cubre metodología, herramientas, Python, SQL, análisis, visualización, Machine Learning y un proyecto capstone aplicado a datos reales.',
         date: 'Septiembre 2023',
         coursesCount: '10 Cursos',
@@ -549,6 +617,7 @@ const certData = {
     'ibm-data-analyst': {
         title: 'IBM Data Analyst',
         provider: 'IBM - Coursera',
+        type: 'certification',
         description: 'Certificado profesional de IBM en análisis de datos que cubre Excel, SQL, Python, Cognos Analytics y Tableau para el manejo completo del ciclo de análisis de datos desde la exploración hasta la presentación de resultados.',
         date: 'Septiembre 2023',
         coursesCount: '9 Cursos',
@@ -579,6 +648,7 @@ const certData = {
     'linux-open-source': {
         title: 'Open Source Software Development, Linux and Git',
         provider: 'The Linux Foundation - Coursera',
+        type: 'specialization',
         description: 'Especialización en desarrollo de software open source, administración Linux y control de versiones con Git, cubriendo metodologías de colaboración, herramientas de línea de comandos y flujos de trabajo distribuidos.',
         date: 'Octubre 2023',
         coursesCount: '4 Cursos',
@@ -604,6 +674,7 @@ const certData = {
     'web-design': {
         title: 'Web Design for Everybody: Basics of Web Development & Coding',
         provider: 'University of Michigan - Coursera',
+        type: 'specialization',
         description: 'Especialización en diseño y desarrollo web que cubre HTML5, CSS3, JavaScript, diseño responsivo y un proyecto capstone, orientada a crear páginas web interactivas y adaptables a distintos dispositivos.',
         date: 'Septiembre 2020',
         coursesCount: '5 Cursos',
@@ -630,6 +701,7 @@ const certData = {
     'web-applications': {
         title: 'Web Applications for Everybody',
         provider: 'University of Michigan - Coursera',
+        type: 'specialization',
         description: 'Especialización en desarrollo de aplicaciones web que cubre desde entornos de desarrollo hasta bases de datos, PHP, JavaScript y JSON para construir aplicaciones web completas.',
         date: 'Noviembre 2020',
         coursesCount: '4 Cursos',

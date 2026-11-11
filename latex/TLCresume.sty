@@ -1,0 +1,57 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{TLCresume}[11/19/21 resume package]
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\RequirePackage[10pt]{moresize}
+\usepackage{anyfontsize}
+\RequirePackage{csquotes}
+
+% MARGINS AND SPACING
+\RequirePackage[margin=.5in, top=.5in, bottom=.5in]{geometry}
+\raggedright
+\raggedbottom
+
+% COLOR
+\RequirePackage{xcolor}
+\definecolor{highlight}{RGB}{61, 90, 128}
+
+% LINKS
+\RequirePackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=highlight}
+
+% BULLET POINTS
+\RequirePackage[inline]{enumitem}
+\setlength{\tabcolsep}{0in}
+
+% SECTION FORMATTING
+\RequirePackage[nostruts]{titlesec}
+\titlespacing*{\section}{0em}{0.5em}{0em}
+\titleformat{\section}{\color{highlight} \bfseries \raggedright \large}{}{0em}{}[\vspace{-0.75em}\hrulefill]
+% SUBSECTION FORMATTING
+\titlespacing*{\subsection}{0em}{0em}{0em}
+\titleformat{\subsection}{\bfseries}{}{0em}{}[]
+
+% BOLD COMMAND
+\newcommand{\skills}[1]{ {\bfseries #1}}
+
+
+
+% SUBTEXT
+\newcommand{\subtext}[1]{\textit{#1}\par\vspace{-.75em}}
+
+% tighter spacing than itemize
+\setlist[itemize]{align=parleft,left=0pt..1em}
+\newenvironment{zitemize}{
+\begin{itemize} \itemsep 0pt \parskip 0pt \parsep 1pt}
+{\end{itemize}\vspace{-.5em}}
+
+% NO PAGE NUMBER
+\pagenumbering{gobble}
+
+% SUBFILES IMPORTING
+\RequirePackage{standalone}
+
+% FOR TEMPLATE FILLER
+\RequirePackage[english]{babel}
+\RequirePackage{blindtext}

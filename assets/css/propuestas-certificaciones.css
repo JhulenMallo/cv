@@ -1,0 +1,321 @@
+        /* Estilos base de la página de pruebas */
+        .proposal-title { text-align: center; margin-bottom: 3rem; margin-top: 4rem; position: relative;}
+        .proposal-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--primary-blue); margin: 15px auto 0; border-radius: 2px;}
+        .page-header { background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)); color: white; padding: 3rem 1rem; text-align: center; border-radius: 15px; margin-bottom: 3rem;}
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA A: Modern Minimalist / Glassmorphism */
+        /* ---------------------------------------------------- */
+        .prop-a-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        [data-theme="light"] .prop-a-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .prop-a-card:hover { transform: translateY(-8px); border-color: var(--primary-blue); box-shadow: 0 15px 30px rgba(0,0,0,0.2);}
+        .prop-a-img { width: 100%; border-radius: 12px; margin-bottom: 20px; aspect-ratio: 4/3; object-fit: cover;}
+        .prop-a-tag { position: absolute; top: 30px; right: 30px; background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; backdrop-filter: blur(5px);}
+        .prop-a-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;}
+        .prop-a-provider { font-size: 0.9rem; color: var(--text-light); margin-bottom: 20px; display:flex; align-items:center; justify-content:center; gap:8px;}
+        .prop-a-icon { width: 24px; height: 24px;}
+        .prop-a-btn { background: transparent; color: var(--primary-blue); border: 2px solid var(--primary-blue); padding: 8px 24px; border-radius: 30px; font-weight: 600; transition: 0.3s; text-decoration: none;}
+        .prop-a-btn:hover { background: var(--primary-blue); color: white;}
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA B: Tech Badges (GitHub/Credly Cyber Style) */
+        /* ---------------------------------------------------- */
+        /* El diseño es pequeño, compacto y resalta colores del logo */
+        .prop-b-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px;}
+        .prop-b-card {
+            background: #151a23; /* Darker Github-like background */
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: 0.3s;
+            position: relative;
+        }
+        [data-theme="light"] .prop-b-card { background: #fafbfc; border-color: #e1e4e8;}
+        /* Neon glows en hover */
+        .prop-b-card:hover { border-color: #58a6ff; box-shadow: 0 0 15px rgba(88, 166, 255, 0.4);}
+        .prop-b-card.ibm:hover { border-color: #054ada; box-shadow: 0 0 15px rgba(5, 74, 218, 0.4);}
+        .prop-b-card.gcp:hover { border-color: #4285F4; box-shadow: 0 0 15px rgba(66, 133, 244, 0.4);}
+        /* El arte es el thumbnail circular */
+        .prop-b-img-wrapper { width: 90px; height: 90px; border-radius: 50%; overflow: hidden; margin-bottom: 15px; border: 3px solid var(--border-color); display: flex; align-items: center; justify-content: center; background: white;}
+        .prop-b-img { width: 100%; height: 100%; object-fit: cover;}
+        .prop-b-title { font-size: 1rem; font-weight: 600; margin-bottom: 5px; color: var(--text-dark);}
+        .prop-b-provider { font-size: 0.8rem; color: #8b949e; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;}
+        .prop-b-btn { font-size: 0.85rem; padding: 6px 0; width: 100%; border: 1px solid var(--border-color); border-radius: 6px; background: transparent; color: var(--text-dark); font-weight: 500;}
+        .prop-b-btn:hover { background: var(--grey-bg);}
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA C: Corporate Horizontal List (LinkedIn Style) */
+        /* ---------------------------------------------------- */
+        .prop-c-container { max-width: 900px; margin: 0 auto;}
+        .prop-c-card {
+            display: flex;
+            align-items: center;
+            padding: 24px;
+            border-bottom: 1px solid var(--border-color);
+            transition: background 0.2s;
+        }
+        .prop-c-card:hover { background: rgba(0,0,0,0.02);}
+        [data-theme="dark"] .prop-c-card:hover { background: rgba(255,255,255,0.02);}
+        .prop-c-img-col { flex: 0 0 180px; margin-right: 30px;}
+        .prop-c-img { width: 100%; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+        .prop-c-body { flex: 1;}
+        .prop-c-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 5px;}
+        .prop-c-subtitle { font-size: 1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;}
+        .prop-c-meta { font-size: 0.9rem; color: var(--text-light); margin-bottom: 15px;}
+        .prop-c-btn { display: inline-block; padding: 6px 16px; font-weight: 600; font-size: 0.9rem; border-radius: 4px; background: var(--border-color); color: var(--text-dark); text-decoration: none;}
+        .prop-c-btn:hover { background: var(--primary-blue); color: white;}
+        /* Mobile responsive prop-c */
+        @media (max-width: 768px) {
+            .prop-c-card { flex-direction: column; align-items: flex-start;}
+            .prop-c-img-col { flex: none; width: 100%; max-width: 250px; margin-right: 0; margin-bottom: 20px;}
+        }
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA D: Asymmetric Start-up & Pill Filter */
+        /* ---------------------------------------------------- */
+        .pill-filter { display: inline-flex; background: rgba(255,255,255,0.05); border-radius: 40px; padding: 4px; margin-bottom: 2rem; border: 1px solid var(--border-color);}
+        [data-theme="light"] .pill-filter { background: rgba(0,0,0,0.03);}
+        .pill-btn { border: none; background: transparent; padding: 8px 24px; border-radius: 30px; font-weight: 500; color: var(--text-light); transition: 0.3s;}
+        .pill-btn.active { background: var(--primary-blue); color: white; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);}
+        .prop-d-card { background: var(--grey-bg); border-radius: 20px; overflow: hidden; position: relative; border: 1px solid var(--border-color); display: flex; flex-direction: column; height: 100%; transition: 0.3s;}
+        .prop-d-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2);}
+        .prop-d-img-container { height: 180px; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); background: var(--primary-blue); position: relative;}
+        .prop-d-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.8; mix-blend-mode: luminosity;}
+        .prop-d-card:hover .prop-d-img { opacity: 1; mix-blend-mode: normal;}
+        .prop-d-logo { position: absolute; bottom: 10px; right: 20px; width: 45px; height: 45px; background: white; border-radius: 50%; padding: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 2;}
+        .prop-d-body { padding: 25px 20px 20px;}
+        .prop-d-tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary-blue); font-weight: 700; margin-bottom: 5px; display: block;}
+        .prop-d-title { font-size: 1.15rem; font-weight: 700; line-height: 1.3; margin-bottom: 15px;}
+        .prop-d-footer { margin-top: auto; padding-top: 15px; border-top: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center;}
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA E: 3D Flip Card & Dropdown Filter */
+        /* ---------------------------------------------------- */
+        .modern-select { appearance: none; background: var(--grey-bg) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"><path d="M4 6l4 4 4-4H4z"/></svg>') no-repeat right 15px center; border: 1px solid var(--border-color); color: var(--text-dark); padding: 10px 40px 10px 20px; border-radius: 8px; font-weight: 500; cursor: pointer; display: inline-block; min-width: 250px;}
+        .modern-select:focus { outline: none; border-color: var(--primary-blue);}
+        .flip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 30px;}
+        .flip-card { background: transparent; height: 320px; perspective: 1000px; cursor: pointer;}
+        .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); transform-style: preserve-3d;}
+        .flip-card:hover .flip-card-inner { transform: rotateY(180deg);}
+        .flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.15); border: 1px solid var(--border-color);}
+        .flip-card-front { background: var(--grey-bg); display: flex; flex-direction: column; align-items: center; justify-content: center;}
+        .flip-img-wrap { width: 100%; height: 160px; overflow: hidden;}
+        .flip-img { width: 100%; height: 100%; object-fit: cover;}
+        .flip-title { padding: 20px; font-weight: 700; font-size: 1.1rem; color: var(--text-dark); background: linear-gradient(0deg, var(--grey-bg) 60%, transparent);}
+        .flip-card-back { background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue)); color: white; transform: rotateY(180deg); display: flex; flex-direction: column; justify-content: center; padding: 30px; border: none;}
+        .flip-back-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; border-bottom: 2px solid rgba(255,255,255,0.2); padding-bottom: 15px;}
+        .flip-line { display: flex; align-items: center; font-size: 0.9rem; margin-bottom: 12px; text-align: left; gap: 10px;}
+        .flip-line i { width: 20px; text-align: center; color: rgba(255,255,255,0.8);}
+        .flip-btn { margin-top: auto; background: white; color: var(--primary-blue); border: none; padding: 8px 15px; border-radius: 30px; font-weight: 700; font-size: 0.85rem;}
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA F: Accordion Line & Invisible Tags */
+        /* ---------------------------------------------------- */
+        .invisible-tags { display: flex; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;}
+        .i-tag { cursor: pointer; font-size: 0.9rem; font-weight: 600; color: var(--text-light); padding: 5px 0; border-bottom: 2px solid transparent; transition: 0.2s;}
+        .i-tag:hover { color: var(--text-dark);}
+        .i-tag.active { color: var(--primary-blue); border-bottom-color: var(--primary-blue);}
+        .accordion-wrapper { border-top: 1px solid var(--border-color);}
+        .acc-item { border-bottom: 1px solid var(--border-color);}
+        .acc-header { width: 100%; text-align: left; background: transparent; border: none; padding: 20px 10px; display: flex; align-items: center; cursor: pointer; color: var(--text-dark); transition: 0.3s;}
+        .acc-header:hover { background: rgba(128,128,128,0.05);}
+        .acc-logo { width: 42px; height: 42px; border-radius: 8px; background: white; padding: 6px; border: 1px solid var(--border-color); margin-right: 20px; box-sizing: border-box; object-fit: contain; flex-shrink: 0;}
+        .acc-title { font-size: 1.1rem; font-weight: 600; flex: 1;}
+        .acc-meta { color: var(--text-light); font-size: 0.9rem; font-variant-numeric: tabular-nums; margin-right: 20px;}
+        .acc-icon { transition: transform 0.3s; color: var(--text-light);}
+        .acc-item.open .acc-icon { transform: rotate(180deg);}
+        .acc-body { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), padding 0.4s ease; padding: 0 10px; opacity: 0;}
+        .acc-item.open .acc-body { max-height: 500px; padding: 0 10px 30px; opacity: 1; transition: max-height 0.4s ease-in-out, padding 0.4s ease, opacity 0.4s ease 0.1s;}
+        .acc-content-flex { display: flex; gap: 30px; margin-top: 15px; background: var(--grey-bg); padding: 20px; border-radius: 12px;}
+        .acc-img { width: 200px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+        @media (max-width: 768px) {
+            .acc-header { flex-wrap: wrap;}
+            .acc-meta { width: 100%; margin: 10px 0 0 60px;}
+            .acc-content-flex { flex-direction: column;}
+        }
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA G: Mezcla A + D (Glass Asymmetric) */
+        /* ---------------------------------------------------- */
+        .prop-g-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        [data-theme="light"] .prop-g-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .prop-g-card:hover { transform: translateY(-8px); border-color: var(--primary-blue); box-shadow: 0 15px 30px rgba(0,0,0,0.2);}
+
+        .prop-g-img-container { height: 160px; clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); background: var(--primary-blue); position: relative;}
+        /* Se quita opacity extrema en reposo y mix-blend-mode para que no opaque la imagen */
+        .prop-g-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.95; transition: transform 0.4s, opacity 0.4s; cursor: zoom-in;}
+        .prop-g-card:hover .prop-g-img { opacity: 1; transform: scale(1.05);}
+
+        /* El contenedor del logo posicionado dentro del body lado superior derecho */
+        .prop-g-logo-wrapper { position: absolute; top: -20px; right: 20px; width: 45px; height: 45px; background: white; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 4; transition: 0.3s; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+        .prop-g-logo-wrapper img { width: 68%; height: 68%; object-fit: contain; }
+        .prop-g-card:hover .prop-g-logo-wrapper { transform: scale(1.1);}
+
+        .prop-g-tag { position: absolute; top: 15px; left: 15px; background: rgba(0,0,0,0.7); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; backdrop-filter: blur(5px); z-index: 3;}
+
+        .prop-g-body { padding: 30px 20px 25px; position: relative; text-align: left;}
+        .prop-g-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: var(--text-dark);}
+        .prop-g-provider { font-size: 0.9rem; color: var(--text-light); margin-bottom: 25px;}
+        .prop-g-btn { background: transparent; color: var(--primary-blue); border: 2px solid var(--primary-blue); padding: 8px 24px; border-radius: 30px; font-weight: 600; transition: 0.3s; text-decoration: none;}
+        .prop-g-btn:hover { background: var(--primary-blue); color: white;}
+
+        /* ---------------------------------------------------- */
+        /* PROPUESTA H: Mezcla C + F (Accordion Corporate) */
+        /* ---------------------------------------------------- */
+        .prop-h-body { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), padding 0.4s ease; padding: 0 10px; opacity: 0;}
+        .acc-item.open .prop-h-body { max-height: 2000px; padding: 0 10px 30px; opacity: 1; transition: max-height 0.6s ease-in-out, padding 0.4s ease, opacity 0.4s ease 0.1s;}
+
+        /* Contenedor Grid para que las tarjetas fluyan hacia abajo en varias columnas */
+        .prop-h-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; padding-bottom: 10px; padding-top: 15px; }
+
+        .prop-h-inner-card {
+            display: flex;
+            align-items: center;
+            padding: 24px;
+            background: var(--grey-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+        .prop-h-inner-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); border-color: var(--primary-blue);}
+        .prop-h-img-col { flex: 0 0 180px; margin-right: 30px;}
+        .prop-h-img { width: 100%; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+        .prop-h-content { flex: 1;}
+        .prop-c-title { color: var(--text-dark); }
+
+        @media (max-width: 768px) {
+            .prop-h-inner-card { flex-direction: column; align-items: flex-start;}
+            .prop-h-img-col { flex: none; width: 100%; max-width: 250px; margin-right: 0; margin-bottom: 20px;}
+            .prop-h-gallery { padding-bottom: 20px; }
+        }
+
+/* Marco y paleta compartidos; las variantes conservan su distribución de ejemplo. */
+.proposals-page .proposals-main {
+    padding-block:54px 72px;
+}
+.proposals-page .page-header {
+    text-align:left;
+    padding:0 0 38px;
+    border:0;
+    border-bottom:1px solid var(--line);
+    border-radius:0;
+    background:none;
+    color:var(--text);
+    margin-bottom:40px;
+}
+.proposals-page .page-header h1 {
+    font-size:clamp(30px,4vw,44px);
+    font-weight:500;
+    letter-spacing:-1.6px;
+    line-height:1.3;
+}
+.proposals-page .page-header .lead {
+    font-size:14px;
+    color:var(--muted);
+    margin-top:18px;
+}
+.proposals-page .text-muted {
+    color:var(--muted)!important;
+}
+.proposals-page .proposal-title {
+    font-size:24px;
+    font-weight:500;
+    letter-spacing:-.7px;
+}
+.proposals-page .prop-a-card,
+.proposals-page .prop-b-card,
+.proposals-page .prop-d-card,
+.proposals-page .prop-g-card,
+.proposals-page .flip-card-front,
+.proposals-page .acc-content-flex,
+.proposals-page .prop-h-inner-card {
+    background:var(--surface);
+    border-color:var(--line);
+    color:var(--text);
+    border-radius:5px;
+}
+.proposals-page .prop-g-title,
+.proposals-page .prop-b-title,
+.proposals-page .prop-a-title,
+.proposals-page .flip-title {
+    color:var(--text);
+}
+.proposals-page .prop-g-provider,
+.proposals-page .prop-b-provider {
+    color:var(--muted);
+}
+.proposals-page .prop-d-img-container,
+.proposals-page .prop-g-img-container {
+    background:var(--raised)!important;
+    clip-path:none;
+}
+.proposals-page .prop-a-btn,
+.proposals-page .prop-b-btn,
+.proposals-page .prop-c-btn,
+.proposals-page .prop-g-btn,
+.proposals-page .flip-btn,
+.proposals-page .pill-btn {
+    border-radius:4px;
+    font-size:11px;
+    text-decoration:none;
+}
+.proposals-page .bg-primary,
+.proposals-page .btn-primary,
+.proposals-page .pill-btn.active,
+.proposals-page .flip-card-back {
+    color:var(--accent-ink)!important;
+    background:linear-gradient(135deg,var(--button-start),var(--accent) 55%,var(--button-end))!important;
+    border-color:var(--accent)!important;
+}
+.proposals-page .pill-filter {
+    flex-wrap:wrap;
+    border-radius:4px;
+}
+.proposals-page .flip-grid {
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));
+}
+.proposals-page .prop-b-grid {
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
+}
+.proposals-page .prop-h-title,
+.proposals-page .acc-title {
+    min-width:0;
+}
+@media(max-width:560px) {
+    .proposals-page .proposals-main { padding-block:36px 50px; }
+    .proposals-page .proposal-title { font-size:21px; }
+    .proposals-page .pill-btn { padding:8px 14px; }
+}

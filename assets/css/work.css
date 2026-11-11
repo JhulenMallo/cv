@@ -1,0 +1,233 @@
+/* Casos de trabajo y acceso al CV: misma base visual que el resto del portafolio. */
+.work-list {
+    border-bottom:1px solid var(--line);
+}
+.work-case {
+    padding:36px 0;
+    border-top:1px solid var(--line);
+}
+.work-case-heading {
+    display:flex;
+    align-items:start;
+    gap:22px;
+}
+.work-number {
+    color:var(--muted);
+    font:12px var(--mono);
+    padding-top:4px;
+}
+.work-identity {
+    flex:1;
+    min-width:0;
+}
+.work-identity .eyebrow {
+    font-size:9px;
+    margin-bottom:12px;
+}
+.work-identity h3 {
+    font-size:27px;
+    font-weight:500;
+    letter-spacing:-.9px;
+    line-height:1.35;
+}
+.work-summary {
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.8;
+    margin-top:12px;
+}
+.work-status {
+    color:var(--accent);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:5px 12px;
+    font:9px/1.6 var(--mono);
+    white-space:nowrap;
+}
+.work-meta {
+    color:var(--muted);
+    font:10px/1.9 var(--mono);
+    margin-top:22px;
+}
+.work-case-details {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:34px;
+    margin:28px 0 0;
+}
+.work-case-details dt {
+    color:var(--text);
+    font-family:var(--heading);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.work-case-details dd {
+    margin:0;
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.9;
+}
+.work-flow {
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:8px 14px;
+    padding:18px 0 0;
+    margin-top:24px;
+    border-top:1px solid var(--line);
+    color:var(--accent);
+    font:10px/1.8 var(--mono);
+}
+.work-flow li:not(:last-child)::after {
+    content:'→';
+    padding-left:14px;
+    opacity:.5;
+}
+.work-case .tag-list {
+    margin-top:14px;
+}
+.cv-actions {
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:18px;
+}
+.contact-cv {
+    margin-left:22px;
+}
+.selected-learning-heading {
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px 24px;
+    margin:40px 0 22px;
+}
+.selected-learning-heading h3 {
+    font-size:18px;
+    font-weight:500;
+    letter-spacing:-.3px;
+}
+.selected-learning-heading p {
+    font-size:12px;
+    color:var(--muted);
+}
+.complete-catalog {
+    border:1px solid var(--line);
+    border-radius:4px;
+    margin-top:32px;
+}
+.complete-catalog>summary {
+    display:flex;
+    align-items:center;
+    gap:22px;
+    padding:22px;
+    cursor:pointer;
+    list-style:none;
+}
+.complete-catalog>summary::-webkit-details-marker {
+    display:none;
+}
+.complete-catalog>summary>span:first-child {
+    font-size:14px;
+    font-weight:500;
+}
+.complete-catalog>summary>.mono {
+    color:var(--muted);
+    font-size:9px;
+    margin-left:auto;
+}
+.complete-catalog>summary::after {
+    content:'+';
+    font-size:22px;
+    line-height:1;
+    color:var(--accent);
+}
+.complete-catalog[open]>summary {
+    border-bottom:1px solid var(--line);
+}
+.complete-catalog[open]>summary::after {
+    content:'−';
+}
+.catalog-content {
+    padding:22px;
+}
+@media(max-width:800px) {
+    .work-case-details {
+        gap:24px;
+    }
+    .work-identity h3 {
+        font-size:24px;
+    }
+}
+@media(max-width:560px) {
+    .work-case {
+        padding-block:28px;
+    }
+    .work-case-heading {
+        flex-wrap:wrap;
+        gap:12px;
+    }
+    .work-number {
+        font-size:10px;
+    }
+    .work-status {
+        margin-left:28px;
+    }
+    .work-identity .eyebrow {
+        font-size:8px;
+        letter-spacing:.05em;
+    }
+    .work-identity h3 {
+        font-size:24px;
+    }
+    .work-meta {
+        font-size:9px;
+        margin-top:18px;
+    }
+    .work-case-details {
+        grid-template-columns:1fr;
+        gap:22px;
+        margin-top:22px;
+    }
+    .work-case-details dt {
+        margin-bottom:6px;
+    }
+    .work-flow {
+        font-size:9px;
+        gap:8px;
+    }
+    .work-flow li:not(:last-child)::after {
+        padding-left:8px;
+    }
+    .contact-cv {
+        display:flex;
+        width:fit-content;
+        margin:20px 0 0;
+    }
+    .complete-catalog>summary {
+        padding:18px;
+        gap:12px;
+        flex-wrap:wrap;
+    }
+    .complete-catalog>summary>span:first-child {
+        font-size:13px;
+    }
+    .complete-catalog>summary>.mono {
+        margin-left:0;
+        font-size:8px;
+    }
+    .complete-catalog>summary::after {
+        margin-left:auto;
+    }
+    .catalog-content {
+        padding:16px;
+    }
+}
+@media print {
+    #work,.cv-actions {
+        display:none!important;
+    }
+}
